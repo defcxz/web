@@ -126,8 +126,13 @@
 
 @media (max-width: 600px) {
   .grid {
+    margin-top: -5rem;
     width: 100%;
     flex-direction: column;
+  }
+
+  .me {
+    width: 90vw;
   }
 }
 
@@ -155,5 +160,8 @@
   }
   .logo img {
     filter: invert(1);
+  }
+  .icon img {
+    filter: invert(0);
   }
 }

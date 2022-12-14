@@ -9,7 +9,7 @@ export default function Home() {
         <div className={styles.grid}>
          
          
-          <img src="/IMGs/me.svg" alt="Mario G." width="60%"/>
+          <img className={styles.me} src="/IMGs/me.svg" alt="Mario G." width="60%"/>
 
           <div className={styles.column}>
 
