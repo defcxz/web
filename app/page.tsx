@@ -5,17 +5,31 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js 13!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>app/page.tsx</code>
-        </p>
-
+        
         <div className={styles.grid}>
-          <a href="https://beta.nextjs.org/docs" className={styles.card}>
+         
+         
+          <img src="/IMGs/me.svg" alt="Mario G." width="60%"/>
+
+          <div className={styles.column}>
+
+            <h1 className={styles.title}>
+              Mario G.
+            </h1>
+            <p className={styles.description}>
+              Programador y Aspirante a Ingeniero en Informática.
+            </p>
+          
+          <hr/>
+          <div className={styles.icon}>
+            
+              <a href="https://www.instagram.com/defcxz"><img src="IMGs/instagram.svg" alt="instagram-logo"/></a>
+              <a href="mailto:mralejandrogu@gmail.com"><img src="IMGs/mail.svg" alt="mail-logo"/></a>
+              <a href="https://www.github.com/defcxz"><img src="IMGs/github.svg" alt="github-logo"/></a>
+          </div>
+
+          </div>
+          {/* <a href="https://beta.nextjs.org/docs" className={styles.card}>
             <h2>Documentation &rarr;</h2>
             <p>Find in-depth information about Next.js 13</p>
           </a>
@@ -36,7 +50,10 @@ export default function Home() {
           >
             <h2>Deploy &rarr;</h2>
             <p>Deploy your Next.js site to a public URL with Vercel.</p>
-          </a>
+          </a> */}
+
+
+
         </div>
       </main>
 

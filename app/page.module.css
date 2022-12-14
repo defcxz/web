@@ -12,6 +12,22 @@
   align-items: center;
 }
 
+.column p {
+  margin-top: 5px;
+}
+
+.icon {
+  margin-top: 20px;
+  display: flex;
+  filter: invert(1);
+  justify-content: center;
+  gap: 3.5rem;
+}
+
+.icon img {
+  width: 40px;
+}
+
 .footer {
   display: flex;
   flex: 1;
@@ -30,11 +46,9 @@
 
 .title {
   margin: 0;
-  line-height: 1.15;
   font-size: 4rem;
   font-style: normal;
-  font-weight: 800;
-  letter-spacing: -0.025em;
+  font-weight: 700;
 }
 
 .title a {
@@ -54,9 +68,7 @@
 }
 
 .description {
-  margin: 4rem 0;
-  line-height: 1.5;
-  font-size: 1.5rem;
+  font-size: 1.1rem;
 }
 
 .code {
@@ -75,6 +87,7 @@
   flex-wrap: wrap;
   max-width: 1200px;
 }
+
 
 .card {
   margin: 1rem;
@@ -120,7 +133,7 @@
 
 @media (prefers-color-scheme: dark) {
   .title {
-    background: linear-gradient(180deg, #ffffff 0%, #aaaaaa 100%);
+    background-color: #fff;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
