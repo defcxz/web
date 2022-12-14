@@ -28,6 +28,14 @@
   width: 40px;
 }
 
+.melight {
+  display: block;
+}
+
+.medark {
+  display: none;
+}
+
 .footer {
   display: flex;
   flex: 1;
@@ -131,7 +139,7 @@
     flex-direction: column;
   }
 
-  .me {
+  .medark {
     width: 90vw;
   }
 }
@@ -163,5 +171,11 @@
   }
   .icon img {
     filter: invert(0);
+  }
+  .melight {
+    display: none;
+  }
+  .medark {
+    display: block;
   }
 }

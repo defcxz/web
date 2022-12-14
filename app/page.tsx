@@ -9,7 +9,8 @@ export default function Home() {
         <div className={styles.grid}>
          
          
-          <img className={styles.me} src="/IMGs/me.svg" alt="Mario G." width="60%"/>
+          <img className={styles.medark} src="/IMGs/medark.svg" alt="Mario G." width="60%"/>
+          <img className={styles.melight} src="/IMGs/melight.svg" alt="Mario G." width="60%"/>
 
           <div className={styles.column}>
 
