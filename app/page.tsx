@@ -1,14 +1,15 @@
 import Image from 'next/image'
 import styles from './page.module.css'
 
+
 export default function Home() {
   return (
     <div className={styles.container}>
       <main className={styles.main}>
-        
+
         <div className={styles.grid}>
-         
-         
+
+
           <img className={styles.medark} src="/IMGs/medark.svg" alt="Mario G." width="60%"/>
           <img className={styles.melight} src="/IMGs/melight.svg" alt="Mario G." width="60%"/>
 
@@ -20,10 +21,10 @@ export default function Home() {
             <p className={styles.description}>
               Programador y Aspirante a Ingeniero en Informática.
             </p>
-          
+
           <hr/>
           <div className={styles.icon}>
-            
+
               <a href="https://www.instagram.com/defcxz"><img src="IMGs/instagram.svg" alt="instagram-logo"/></a>
               <a href="mailto:mralejandrogu@gmail.com"><img src="IMGs/mail.svg" alt="mail-logo"/></a>
               <a href="https://www.github.com/defcxz"><img src="IMGs/github.svg" alt="github-logo"/></a>
