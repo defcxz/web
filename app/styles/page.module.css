@@ -33,22 +33,6 @@
   width: 40px;
 }
 
-.footer {
-  display: flex;
-  flex: 1;
-  padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
-}
-
 .title {
   margin: 0;
   font-size: 4rem;
@@ -74,6 +58,11 @@
 
 .description {
   font-size: 1rem;
+}
+
+.separador{
+  width: 70%;
+  opacity: 0.5;
 }
 
 .code {
@@ -143,6 +132,7 @@
     background-size: contain;
     background-position-y: 2.5rem;
     background-attachment: fixed;
+    backdrop-filter: blur(4px) brightness(0.5);
   }
   
   .title {
@@ -155,7 +145,7 @@
   }
   
   .mobileblur{
-    backdrop-filter: blur(4px) brightness(0.5)
+    backdrop-filter: blur(4px) brightness(0.5);
   }
   
   .medark, .melight{
