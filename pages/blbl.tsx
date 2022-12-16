@@ -1,7 +1,8 @@
-
+import styles from '../app/styles/blbl.module.css'
 
 export default function blbl(){
    return (
-      <p>hola</p>
+      <canvas className={styles.canvas}></canvas>
+      
    )
 }

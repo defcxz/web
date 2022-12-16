@@ -1,0 +1,13 @@
+.canvas {
+   width: 100vw;
+   height: 100vh;
+   background-image: url('https://i.giphy.com/media/mWVu0FoJuq6cg/giphy.webp');
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+
+@media (max-width: 600px) {
+   .canvas {
+      background-position-x: center;
+   }
+}
