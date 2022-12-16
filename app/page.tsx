@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import styles from './page.module.css'
 
 
@@ -11,26 +10,26 @@ export default function Home() {
 
 
           <img className={styles.medark} src="/IMGs/medark.svg" alt="Mario G." width="60%"/>
-          <img className={styles.melight} src="/IMGs/melight.svg" alt="Mario G." width="60%"/>
 
-          <div className={styles.column}>
+          <div className={styles.side}>
+            <div className={styles.mobileblur}>
+              <h1 className={styles.title}>
+                Mario G.
+              </h1>
+              <p className={styles.description}>
+                20 años. Programador y Aspirante a Ingeniero en Informática.
+                <hr/>
+              </p>
 
-            <h1 className={styles.title}>
-              Mario G.
-            </h1>
-            <p className={styles.description}>
-              Programador y Aspirante a Ingeniero en Informática.
-            </p>
+              <div className={styles.icon}>
 
-          <hr/>
-          <div className={styles.icon}>
-
-              <a href="https://www.instagram.com/defcxz"><img src="IMGs/instagram.svg" alt="instagram-logo"/></a>
-              <a href="mailto:mralejandrogu@gmail.com"><img src="IMGs/mail.svg" alt="mail-logo"/></a>
-              <a href="https://www.github.com/defcxz"><img src="IMGs/github.svg" alt="github-logo"/></a>
+                  <a href="https://www.instagram.com/defcxz"><img src="IMGs/instagram.svg" alt="instagram-logo"/></a>
+                  <a href="mailto:mralejandrogu@gmail.com"><img src="IMGs/mail.svg" alt="mail-logo"/></a>
+                  <a href="https://www.github.com/defcxz"><img src="IMGs/github.svg" alt="github-logo"/></a>
+              </div>
+            </div>
           </div>
 
-          </div>
           {/* <a href="https://beta.nextjs.org/docs" className={styles.card}>
             <h2>Documentation &rarr;</h2>
             <p>Find in-depth information about Next.js 13</p>
