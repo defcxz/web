@@ -1,4 +1,5 @@
 import styles from './styles/page.module.css'
+import Image from 'next/image'
 
 export default function Home() {
   return (
@@ -6,7 +7,6 @@ export default function Home() {
       <main className={styles.main}>
         
         <div className={styles.grid}>
-
 
           <img className={styles.medark} src="/IMGs/medark.svg" alt="Mario G." width="60%"/>
 
@@ -25,6 +25,7 @@ export default function Home() {
                   <a href="https://www.instagram.com/defcxz"><img src="IMGs/instagram.svg" alt="instagram-logo"/></a>
                   <a href="mailto:mralejandrogu@gmail.com"><img src="IMGs/mail.svg" alt="mail-logo"/></a>
                   <a href="https://www.github.com/defcxz"><img src="IMGs/github.svg" alt="github-logo"/></a>
+                  <a href="https://open.spotify.com/user/lameavollaiiita?si=cfad77966c8d4214"><img src="IMGs/spotify.svg" alt="spotify-logo"/></a>
               </div>
             </div>
           </div>
@@ -51,7 +52,6 @@ export default function Home() {
             <h2>Deploy &rarr;</h2>
             <p>Deploy your Next.js site to a public URL with Vercel.</p>
           </a> */}
-
 
 
         </div>

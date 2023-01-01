@@ -1,6 +1,4 @@
 import './globals.css';
-import snow from './styles/snow.module.css'
-
 import { AnalyticsWrapper } from './components/analytics';
 import Footer from './footer';
 
@@ -17,9 +15,6 @@ export default function RootLayout({
       */}
       <head />
       <body>
-        <div className={snow.snow}>
-          <div></div>
-        </div>
 
         {children}
         <AnalyticsWrapper />
@@ -28,7 +23,6 @@ export default function RootLayout({
         <Footer />
       </footer>    
       </body>
-      
     </html>
   )
 }
