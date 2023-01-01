@@ -13,6 +13,14 @@
   align-items: center;
 }
 
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+
 .side {
   max-width: 30rem;
 }
@@ -81,7 +89,6 @@
   flex-wrap: wrap;
   max-width: 1200px;
 }
-
 
 .card {
   margin: 1rem;
