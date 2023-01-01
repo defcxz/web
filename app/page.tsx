@@ -1,4 +1,5 @@
 import styles from './styles/page.module.css'
+import './components/floating-ui.jsx'
 
 export default function Home() {
   return (

@@ -1,6 +1,9 @@
-import { computePosition, shift, flip, offset } from "@floating-ui/dom";
+"use client"
 
-const floating = document.getElementsByClassName("socialDescription");
+import { computePosition, shift, flip, offset } from "@floating-ui/dom";
+import { findDOMNode } from "react-dom";
+
+const floating = findDOMNode(document.getElementsById("socialDescription"));
 
 document.addEventListener("mousemove"), ({clientX, clientY}) => {
    const virtualEl = {
@@ -21,11 +24,10 @@ document.addEventListener("mousemove"), ({clientX, clientY}) => {
    computePosition(virtualEl, floating, {
       placement: "right-start",
       middleware: [offset(5), flip(), shift()]
-   }).then(({ x, y }) => {
-   Object.assign(floating.style, {
-      top: `${y}px`,
-      left: `${x}px`
+   }).then(({x, y}) => {
+      Object.assign(floating.style, {
+         top: `${y}px`,
+         left: `${x}px`
       });
    });
-
-});
+}
