@@ -1,6 +1,6 @@
 import '../app/globals.css';
 import { useState } from 'react';
-import { auth, signIn, onAuth } from "../firebase";
+import { auth, signIn } from "../firebase";
 import Router from 'next/router';
 
 const BlogPage = () => {
@@ -40,7 +40,7 @@ const BlogPage = () => {
         onChange={e => setPassword(e.target.value)}
       />
       <button type="submit">Iniciar sesión</button>
-      {error && <p>{error.message}</p>}
+      {error && <p>{error}</p>}
     </form>
   );
 };
