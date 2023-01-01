@@ -33,7 +33,7 @@ export default function Home() {
                   <img src="IMGs/github.svg" alt="github-logo"/>
                   <p className={styles.socialDescription}>Aquí tengo algunos proyectos de programación!</p>
                 </a>
-                <a href="https://open.spotify.com/user/lameavollaiiita?si=cfad77966c8d4214">
+                <a href="https://sptfyy.glitch.me/h4nrb">
                   <img src="IMGs/spotify.svg" alt="spotify-logo"/>
                   <p className={styles.socialDescription}>Aquiiii mis gustos musicales</p>
                 </a>
