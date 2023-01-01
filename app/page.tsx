@@ -21,11 +21,24 @@ export default function Home() {
                 <hr className={styles.separador}/>
 
               <div className={styles.icon}>
-
-                  <a href="https://www.instagram.com/defcxz"><img src="IMGs/instagram.svg" alt="instagram-logo"/></a>
-                  <a href="mailto:mralejandrogu@gmail.com"><img src="IMGs/mail.svg" alt="mail-logo"/></a>
-                  <a href="https://www.github.com/defcxz"><img src="IMGs/github.svg" alt="github-logo"/></a>
-                  <a href="https://open.spotify.com/user/lameavollaiiita?si=cfad77966c8d4214"><img src="IMGs/spotify.svg" alt="spotify-logo"/></a>
+                <p className={styles.subtitle}>Puedes encontrarme aquí!</p>
+                <a href="https://www.instagram.com/defcxz">
+                  <img src="IMGs/instagram.svg" alt="instagram-logo"/>
+                  <p className={styles.socialDescription}>Aquí tengo fotos bien bonitas</p>
+                </a>
+                <a href="mailto:mralejandrogu@gmail.com">
+                  <img src="IMGs/mail.svg" alt="mail-logo"/>
+                  <p className={styles.socialDescription}>Correo electrónico</p>
+                </a>
+                <a href="https://www.github.com/defcxz">
+                  <img src="IMGs/github.svg" alt="github-logo"/>
+                  <p className={styles.socialDescription}>Aquí tengo algunos proyectos de programación!</p>
+                </a>
+                <a href="https://open.spotify.com/user/lameavollaiiita?si=cfad77966c8d4214">
+                  <img src="IMGs/spotify.svg" alt="spotify-logo"/>
+                  <p className={styles.socialDescription}>Aquiiii mis gustos musicales</p>
+                </a>
+            
               </div>
             </div>
           </div>
