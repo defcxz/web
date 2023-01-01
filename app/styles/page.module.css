@@ -135,8 +135,6 @@
 
 .socialDescription {
   display: none;
-  position: absolute;
-  box-sizing: border-box;
 }
 
 @media (max-width: 600px) {
@@ -184,7 +182,7 @@
   }
 
   .socialDescription {
-    display: block;
+    display: flex;
     margin-top: 15px !important;
     margin-left: 20px;
   }
