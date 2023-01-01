@@ -49,6 +49,7 @@
 }
 
 .subtitle {
+  display: none;
   margin: 0;
   font-size: 1.5rem;
   font-style: normal;
@@ -153,6 +154,10 @@
     padding-right: 5%;
   }
   
+  .subtitle{
+    display: block;
+  }
+
   .medark{
     position: fixed;
     margin-top: -40rem;
