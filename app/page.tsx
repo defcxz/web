@@ -24,11 +24,11 @@ export default function Home() {
                 <p className={styles.subtitle}>Puedes encontrarme aquí!</p>
                 <a href="https://www.instagram.com/defcxz">
                   <img src="IMGs/instagram.svg" alt="instagram-logo"/>
-                  <p className={styles.socialDescription}>Aquí tengo fotos bien bonitas</p>
+                  <p className={styles.socialDescription}>De vez en cuando publico aquí</p>
                 </a>
                 <a href="mailto:mralejandrogu@gmail.com">
                   <img src="IMGs/mail.svg" alt="mail-logo"/>
-                  <p className={styles.socialDescription}>Correo electrónico</p>
+                  <p className={styles.socialDescription}>Mi correo, por si gustas contactarme por ahí</p>
                 </a>
                 <a href="https://www.github.com/defcxz">
                   <img src="IMGs/github.svg" alt="github-logo"/>
@@ -36,7 +36,7 @@ export default function Home() {
                 </a>
                 <a href="https://sptfyy.glitch.me/h4nrb">
                   <img src="IMGs/spotify.svg" alt="spotify-logo"/>
-                  <p className={styles.socialDescription}>Aquiiii mis gustos musicales</p>
+                  <p className={styles.socialDescription}>Mis gustos musicales 🎶💃🏻</p>
                 </a>
             
               </div>
