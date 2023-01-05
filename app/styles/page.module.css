@@ -74,6 +74,9 @@
 
 .description {
   font-size: 1rem;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .separador{
@@ -95,7 +98,48 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  max-width: 1200px;
+}
+
+.formulario {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input {
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+  border-radius: 2rem;
+  height: 55px;
+  width: 350px;
+  border-color: #fff;
+}
+
+.input::placeholder{
+  color: rgb(202, 202, 202);
+  font-size: 15px;
+  padding-left: 10px;
+}
+
+.submit {
+  margin-left: 10px;
+	background-color:#ffffff;
+	border-radius: 100%;
+	color:#000000;
+	text-decoration:none;
+  padding: 5px;
+}
+
+.submit:active {
+	position:relative;
+	top:1px;
+}
+
+.submit > svg {
+  margin: auto;
+  width: 45px;
+  height: 43px;
 }
 
 .card {
@@ -137,7 +181,11 @@
   display: none;
 }
 
-@media (max-width: 600px) {
+.medark{
+  width: 40vw;
+}
+
+@media (max-width: 768px) {
 
   .grid {
     width: 100vw;
@@ -164,14 +212,24 @@
 
   .medark{
     position: fixed;
-    margin-top: -40rem;
+    margin-top: -44rem;
     width: 90vw;
+  }
+
+  .formulario {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    margin-bottom: 30px;
   }
 
   .icon {
     padding: 5%;
     flex-direction: column;
     gap: 1rem;
+    margin-left: 15px;
+    margin-right: 15px;
+    
   }
   
   .icon a {
