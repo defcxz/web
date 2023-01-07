@@ -40,10 +40,10 @@ export default function Home() {
                 <p className={styles.socialDescription}>Mis gustos musicales 🎶💃🏻</p>
               </a>
             </div>
-              {/* <form action="/send-data-here" method="post" className={styles.formulario}>
+              <form action="/send-data-here" method="post" className={styles.formulario}>
                 <input className={styles.input} type="text" id="msg" name="msg" placeholder='Te gustaría decir algo?'/>
                 <button className={styles.submit} type="submit"><BsArrowRightShort/></button>
-              </form> */}
+              </form>
           </div>
         </div>
     </main>
