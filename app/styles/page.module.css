@@ -107,6 +107,11 @@
   align-items: center;
 }
 
+.formulario [type=text]{
+  padding-left: 30px;
+  letter-spacing: 2px;
+}
+
 .input {
   background-color: #000000;
   color: rgb(255, 255, 255);
@@ -119,7 +124,6 @@
 .input::placeholder{
   color: rgb(202, 202, 202);
   font-size: 15px;
-  padding-left: 10px;
 }
 
 .submit {
@@ -127,19 +131,14 @@
 	background-color:#ffffff;
 	border-radius: 100%;
 	color:#000000;
-	text-decoration:none;
-  padding: 5px;
+  padding: 2px;
 }
 
-.submit:active {
-	position:relative;
-	top:1px;
-}
 
 .submit > svg {
   margin: auto;
-  width: 45px;
-  height: 43px;
+  width: 35px;
+  height: 33px;
 }
 
 .card {
