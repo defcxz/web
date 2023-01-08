@@ -27,15 +27,15 @@ export default function Home() {
                 <img src="IMGs/instagram.svg" alt="instagram-logo"/>
                 <p className={styles.socialDescription}>De vez en cuando publico aquí</p>
               </a>
-              <a href="mailto:mralejandrogu@gmail.com">
+              {/* <a href="mailto:mralejandrogu@gmail.com">
                 <img src="IMGs/mail.svg" alt="mail-logo"/>
                 <p className={styles.socialDescription}>Mi correo, por si gustas contactarme por ahí</p>
-              </a>
+              </a> */}
               <a href="https://www.github.com/defcxz">
                 <img src="IMGs/github.svg" alt="github-logo"/>
                 <p className={styles.socialDescription}>Aquí tengo algunos proyectos de programación!</p>
               </a>
-              <a href="https://sptfyy.glitch.me/h4nrb">
+              <a href="https://open.spotify.com/user/lameavollaiiita?si=ce05a56774b043c1">
                 <img src="IMGs/spotify.svg" alt="spotify-logo"/>
                 <p className={styles.socialDescription}>Mis gustos musicales 🎶💃🏻</p>
               </a>

@@ -2,28 +2,18 @@ import { PrismaClient } from '@prisma/client'
 
 const prisma = new PrismaClient()
 
-export default async function main() {
-   await prisma.messages.create({
-      data: {
-         msg: 'Hola wawi te quiero mucho mucho muUUUUCHISIIIIMSISISISISIMO :D',
-         created_at: new Date()
-      }
-   })
-
-   const post = await prisma.messages.update({
-      where : { id : 1 },
-      data : { msg : 'Actualizado directamente desde la API! :D' }
-   })
-   console.log(post)
+export default async function create(req, res) {
+   try{
+      await prisma.messages.create({
+         data: {
+            msg: req.body.msg,
+            created_at: new Date(),
+         }
+      })
+      res.status(200).json({ message: 'ok' })
+   }
+   catch(e){
+      res.status(500).json({ message: 'error' })
+   }
 
 }
-
-main()
-  .then(async () => {
-    await prisma.$disconnect()
-  })
-  .catch(async (e) => {
-    console.error(e)
-    await prisma.$disconnect()
-    process.exit(1)
-  })
