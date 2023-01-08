@@ -1,4 +1,4 @@
-"use client"
+'use client';
 
 import { computePosition, shift, flip, offset } from "@floating-ui/dom";
 import { findDOMNode } from "react-dom";

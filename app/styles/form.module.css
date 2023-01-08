@@ -1,0 +1,52 @@
+.formulario {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.formulario [type=text]{
+  padding-left: 30px;
+  letter-spacing: 2px;
+}
+ 
+.input {
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+  border-radius: 2rem;
+  height: 55px;
+  width: 350px;
+  border-color: #fff;
+}
+ 
+.input::placeholder{
+  color: rgb(202, 202, 202);
+  font-size: 15px;
+}
+ 
+.submit {
+  margin-left: 10px;
+  background-color:#ffffff;
+  border-radius: 100%;
+  color:#000000;
+  padding: 2px;
+}
+ 
+ 
+.submit > svg {
+  margin: auto;
+  width: 35px;
+  height: 33px;
+}
+
+
+@media (max-width: 768px) {
+  
+  .formulario {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    margin-bottom: 30px;
+  }
+
+}
