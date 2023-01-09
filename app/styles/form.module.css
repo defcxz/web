@@ -39,6 +39,9 @@
   height: 33px;
 }
 
+.mensaje{
+  position: absolute;
+}
 
 @media (max-width: 768px) {
   

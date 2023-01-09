@@ -6,9 +6,14 @@ import styles from '../styles/form.module.css'
 
 export function Form(){
 
-   const [msg, setMsg] = useState('');
+   const [msg, setMsg] = useState('')
+   const [opacity, setOpacity] = useState(1)
 
    const handleSubmit = async (event) => {
+      
+      setOpacity(.5)
+      setMsg('Enviando mensaje...')
+
       event.preventDefault();
 
       try {
@@ -22,17 +27,21 @@ export function Form(){
 
          const data = await response.json();
          console.log(data);
+         setOpacity(1)
          setMsg('Mensaje enviado! :D')
+         
       } catch (error) {
          console.error(error);
-         setMsg('Error al enviar el mensaje, inténtalo nuevamente')
       }
+      
+      
    }
-
+   
+   
    return(
       <form onSubmit={ handleSubmit } method="POST" className={styles.formulario}>
          <input className={styles.input} required minLength={10} onChange={ (e) => setMsg(e.target.value) } value={ msg } type="text" id="msg" name="msg" placeholder='Te gustaría decir algo?'/>
-         <button className={styles.submit} type="submit"><BsArrowRightShort/></button>
+         <button style={{ opacity, transition: 'opacity .3s ease-in-out' }} className={styles.submit} type="submit"><BsArrowRightShort/></button>
       </form>
    )
 }
