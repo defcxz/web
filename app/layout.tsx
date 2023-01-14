@@ -15,9 +15,8 @@ export default function RootLayout({
       */}
       <head />
       <body>
-
-        {children}
-        <AnalyticsWrapper />
+          {children}
+          <AnalyticsWrapper />
 
       <footer>
         <Footer />

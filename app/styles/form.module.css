@@ -1,3 +1,5 @@
+@import url('https://api.fontshare.com/v2/css?f[]=clash-display@400,600,300&display=swap');
+
 .formulario {
   margin-top: 40px;
   display: flex;
@@ -9,13 +11,14 @@
   padding-left: 30px;
   letter-spacing: 2px;
 }
- 
+
 .input {
+  font-family: 'Clash Display', sans-serif;
   background-color: #000000;
   color: rgb(255, 255, 255);
-  border-radius: 2rem;
   height: 55px;
   width: 350px;
+  border-radius: 2rem;
   border-color: #fff;
 }
  
