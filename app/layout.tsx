@@ -15,12 +15,11 @@ export default function RootLayout({
       */}
       <head />
       <body>
-          {children}
-          <AnalyticsWrapper />
 
-      <footer>
-        <Footer />
-      </footer>    
+        {children}
+        <AnalyticsWrapper />
+  
+        {/* <Footer />     */}
       </body>
     </html>
   )

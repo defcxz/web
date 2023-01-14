@@ -20,6 +20,7 @@
   width: 350px;
   border-radius: 2rem;
   border-color: #fff;
+  box-shadow: 0;
 }
  
 .input::placeholder{
@@ -27,6 +28,11 @@
   font-size: 15px;
 }
  
+.input:focus {
+  box-shadow: 0px 0px 15px #fff;
+  transition: .3s;
+}
+
 .submit {
   margin-left: 10px;
   background-color:#ffffff;
