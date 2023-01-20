@@ -1,6 +1,7 @@
 import './globals.css';
+import * as React from 'react';
 import { AnalyticsWrapper } from './components/analytics';
-import Footer from './footer';
+
 
 export default function RootLayout({
   children,
@@ -15,11 +16,9 @@ export default function RootLayout({
       */}
       <head />
       <body>
-
         {children}
         <AnalyticsWrapper />
   
-        {/* <Footer />     */}
       </body>
     </html>
   )
