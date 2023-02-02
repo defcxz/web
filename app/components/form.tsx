@@ -39,7 +39,7 @@ export function Form(){
    
    return(
       <form onSubmit={ handleSubmit } method="POST" className={styles.formulario}>
-         <Input
+         {/* <Input
          rounded
          bordered
          labelPlaceholder='Te gustaría decir algo?'
@@ -48,7 +48,7 @@ export function Form(){
          required
          minLength={10}
          name='msg'
-         />
+         /> */}
          <input className={styles.input} required minLength={10} onChange={ (e) => setMsg(e.target.value) } value={ msg } type="text" id="msg" name="msg" placeholder='Te gustaría decir algo?'/>
          <button style={{ opacity, transition: 'opacity .3s ease-in-out' }} className={styles.submit} type="submit"><BsArrowRightShort/></button>
       </form>
