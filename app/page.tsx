@@ -41,7 +41,7 @@ export default function Home() {
                   <p className={styles.socialDescription}>Aquí tengo algunos proyectos de programación!</p>
                 </a>
               </Tooltip>
-              <Tooltip content={"Aquí tengo algunos proyectos de programación!"} placement="bottom" rounded color="invert">
+              <Tooltip content={"Quieres saber cuáles son mis gustos musicales?"} placement="bottom" rounded color="invert">
                 <a href="https://open.spotify.com/user/lameavollaiiita?si=ce05a56774b043c1">
                   <img src="IMGs/spotify.svg" alt="spotify-logo"/>
                   <p className={styles.socialDescription}>Mis gustos musicales 🎶💃🏻</p>
