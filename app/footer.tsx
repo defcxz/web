@@ -1,5 +1,5 @@
 import styles from './styles/footer.module.css'
-
+import Image from 'next/image';
 
 export default function Footer(){
    return (
@@ -11,7 +11,7 @@ export default function Footer(){
         >
           Powered by{' '}
           <span className={styles.logo}>
-            <img src="./IMGs/vercel.svg" alt="Vercel Logo" width={72} height={16} />
+            <Image src="/IMGs/vercel.svg" alt="Vercel Logo" width={72} height={16} />
           </span>
         </a>
       </footer>
