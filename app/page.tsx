@@ -1,3 +1,5 @@
+'use client';
+
 import styles from './styles/page.module.css'
 import { Form } from './components/form'
 import { Tooltip } from '@nextui-org/react'
