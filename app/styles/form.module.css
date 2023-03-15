@@ -1,4 +1,4 @@
-@import url('https://api.fontshare.com/v2/css?f[]=clash-display@400,600,300&display=swap');
+@import url('https://api.fontshare.com/v2/css?f[]=zodiak@700,400,900,300&display=swap" rel="stylesheet');
 
 .formulario {
   margin-top: 40px;
@@ -13,7 +13,7 @@
 }
 
 .input {
-  font-family: 'Clash Display', sans-serif;
+  font-family: 'Zodiak', serif;
   background-color: #000000;
   color: rgb(255, 255, 255);
   height: 55px;
