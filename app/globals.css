@@ -1,4 +1,4 @@
-@import url('https://api.fontshare.com/v2/css?f[]=zodiak@700,400,900,300&display=swap" rel="stylesheet');
+@import url('https://api.fontshare.com/v2/css?f[]=satoshi@900,700,300,400&display=swap" rel="stylesheet');
 
 html,
 body {
@@ -6,7 +6,7 @@ body {
   background: black;
   padding: 0;
   margin: 0;
-  font-family: 'Zodiak', serif;
+  font-family: 'Satoshi', sans-serif;
 }
 
 a {

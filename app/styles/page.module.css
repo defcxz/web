@@ -12,15 +12,6 @@
   justify-content: center;
   align-items: center;
 }
-
-.hidden {
-  display: none;
-}
-
-.visible {
-  display: block;
-}
-
 .side {
   max-width: 30rem;
 }
@@ -43,7 +34,7 @@
 
 .title {
   margin: 0;
-  font-size: 4rem;
+  font-size: 5rem;
   font-style: normal;
   font-weight: 900;
 }

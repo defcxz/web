@@ -1,7 +1,7 @@
 'use client';
 
-import styles from './styles/page.module.css';
 import { Form } from './components/form';
+import styles from './styles/page.module.css';
 import Image from 'next/image';
 
 export default function Home() {
@@ -29,20 +29,20 @@ export default function Home() {
                   <Image src="/IMGs/instagram.svg" alt="instagram-logo" width={60} height={60}/>
                   <p className={styles.socialDescription}>De vez en cuando publico aquí</p>
                 </a>
-              {/* <a href="mailto:mralejandrogu@gmail.com">
-                <Image src="/IMGs/mail.svg" alt="mail-logo" width={60} height={60}/>
-                <p className={styles.socialDescription}>Mi correo, por si gustas contactarme por ahí</p>
-              </a> */}
                 <a href="https://www.github.com/defcxz">
                   <Image src="/IMGs/github.svg" alt="github-logo" width={60} height={60}/>
                   <p className={styles.socialDescription}>Aquí tengo algunos proyectos de programación!</p>
                 </a>
-                <a href="https://open.spotify.com/user/lameavollaiiita?si=ce05a56774b043c1">
+                <a href="mailto:ma.gomez@duocuc.cl">
+                  <Image src="/IMGs/mail.svg" alt="mail-logo" width={60} height={60}/>
+                  <p className={styles.socialDescription}>Mi correo, por si gustas contactarme por ahí</p>
+                </a>
+                {/* <a href="https://open.spotify.com/user/lameavollaiiita?si=ce05a56774b043c1">
                   <Image src="/IMGs/spotify.svg" alt="spotify-logo" width={60} height={60}/>
                   <p className={styles.socialDescription}>Mis gustos musicales 🎶💃🏻</p>
-                </a>
+                </a> */}
             </div>
-              <Form/>
+              {/* <Form/> */}
           </div>
         </div>
     </main>
