@@ -1,5 +1,3 @@
-'use client';
-
 import { Form } from './components/form';
 import styles from './styles/page.module.css';
 import Image from 'next/image';
@@ -16,13 +14,8 @@ export default function Home() {
 
           <div className={styles.side}>
             <h1 className={styles.title}>
-              Mario G.
+              Mario G
             </h1>
-            <p className={styles.description}>
-              20 años. Programador y Aspirante a Ingeniero en Informática.
-            </p>
-              <hr className={styles.separador}/>
-
             <div className={styles.icon}>
               <p className={styles.subtitle}>Puedes encontrarme aquí!</p>
                 <a href="https://www.instagram.com/defcxz">
@@ -42,6 +35,10 @@ export default function Home() {
                   <p className={styles.socialDescription}>Mis gustos musicales 🎶💃🏻</p>
                 </a> */}
             </div>
+
+            <p className={styles.description}>
+              20 años. Programador y Aspirante a Ingeniero en Informática.
+            </p>
               {/* <Form/> */}
           </div>
         </div>

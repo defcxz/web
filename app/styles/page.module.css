@@ -21,15 +21,14 @@
 }
 
 .icon {
-  margin-top: 20px;
   display: flex;
-  justify-content: center;
-  gap: 3.5rem;
+  justify-content: flex-end;
+  gap: 1.5rem;
 }
 
 .icon img {
   filter: invert(1);
-  width: 40px;
+  width: 29px;
 }
 
 .title {
@@ -37,6 +36,7 @@
   font-size: 5rem;
   font-style: normal;
   font-weight: 900;
+  line-height: 4rem;
 }
 
 .subtitle {
@@ -60,17 +60,16 @@
 
 .title,
 .description {
-  text-align: center;
+  text-align: right;
 }
 
 .description {
-  font-size: 1rem;
   width: 70%;
   margin-left: auto;
-  margin-right: auto;
 }
 
 .separador{
+  margin-top: 3rem;
   width: 70%;
 }
 
