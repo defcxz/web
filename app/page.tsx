@@ -1,6 +1,7 @@
 import { Form } from './components/form';
 import styles from './styles/page.module.css';
 import Image from 'next/image';
+import content from './content.json';
 
 export default function Home() {
   
@@ -14,7 +15,7 @@ export default function Home() {
 
           <div className={styles.side}>
             <h1 className={styles.title}>
-              Mario G
+              {content.nombre}
             </h1>
             <div className={styles.icon}>
               <p className={styles.subtitle}>Puedes encontrarme aquí!</p>
@@ -37,7 +38,7 @@ export default function Home() {
             </div>
 
             <p className={styles.description}>
-              20 años. Programador y Aspirante a Ingeniero en Informática.
+              {content.desc}
             </p>
               {/* <Form/> */}
           </div>

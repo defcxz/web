@@ -150,6 +150,7 @@
   }
   
   .description {
+    display: none;
     padding-left: 5%;
     padding-right: 5%;
   }
@@ -160,15 +161,20 @@
 
   .medark{
     position: fixed;
-    margin-top: -40rem;
+    margin-top: -32rem;
     width: 90vw;
   }
 
   .icon {
+    margin-top: 4rem;
     flex-direction: column;
     gap: 1rem;
   }
   
+  .icon img {
+    width: 40px;
+  }
+
   .icon a {
     padding-top: 2%;
     padding-bottom: 2%;
@@ -184,6 +190,7 @@
     display: flex;
     margin-top: 15px !important;
     margin-left: 20px;
+    margin-right: 4px;
   }
 
   .icon a::hover{
