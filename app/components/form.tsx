@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import { BsArrowRightShort } from 'react-icons/bs'
 import styles from '../styles/form.module.css'
-import { Input } from '@nextui-org/react'
 
 export function Form(){
 
