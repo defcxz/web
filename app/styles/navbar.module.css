@@ -1,0 +1,29 @@
+.nav {
+    backdrop-filter: blur(4px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 85vw;
+    margin-right: auto;
+    margin-left: auto;
+    z-index: 100;
+    font-size: .9rem;
+}
+
+.nav ul, .logo{
+    padding-left: 0px;
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.separador{
+    width: 13%;
+    height: 1px;
+    background-color: #000;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
