@@ -11,7 +11,7 @@ export default function Home() {
         
         <div className={styles.grid}>
 
-          <Image src="/IMGs/medark.svg" className={styles.medark} alt="Mario G." height={500} width={500}/>
+          <Image src="/IMGs/medark.svg" priority className={styles.medark} alt="Mario G." height={500} width={500}/>
 
           <div className={styles.side}>
             <h1 className={styles.title}>
