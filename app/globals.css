@@ -1,12 +1,11 @@
-@import url('https://api.fontshare.com/v2/css?f[]=satoshi@900,700,300,400&display=swap" rel="stylesheet');
-
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;600&family=PT+Serif:wght@400;700&display=swap');
 html,
 body {
-  color: white;
-  background: black;
+  color: #000;
+  background: #FFF0E2;
   padding: 0;
   margin: 0;
-  font-family: 'Satoshi', sans-serif;
+  font-family: 'Noto Sans', sans-serif;
 }
 
 a {
@@ -20,8 +19,8 @@ a {
 
 
 *::selection{
-  background: #fff;
-  color: #000;
+  background: #000000;
+  color: #FFF0E2;
 }
 /* @media (prefers-color-scheme: dark) {
   html {
