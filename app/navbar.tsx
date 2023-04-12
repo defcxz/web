@@ -5,12 +5,10 @@ export default function Navbar(){
    return (
         <nav className={styles.nav}>
             <ul>
-                <li><Image className={styles.logo} alt="Mi logo" src="/IMGs/mi-logo.svg" width={30} height={30}></Image></li>
-                <li><a href="#">Inicio</a></li>
+                <li><a href="#"><Image className={styles.logo} alt="Mi logo" src="/IMGs/mi-logo.svg" width={30} height={30}></Image></a></li>
+                <li><a href="#">Sobre mí</a></li>
                 <li className={styles.separador}></li>
                 <li><a href="#">Mis proyectos</a></li>
-                <li className={styles.separador}></li>
-                <li><a href="#">Tecnologías</a></li>
                 <li className={styles.separador}></li>
                 <li><a href="#">Contacto</a></li>
             </ul>
