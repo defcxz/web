@@ -1,15 +1,12 @@
-import { Form } from './components/form';
 import styles from './styles/page.module.css';
 import Image from 'next/image';
 import content from './content.json';
-import { FaReact } from 'react-icons/fa';
-import { SiTypescript, SiNextdotjs, SiPlanetscale, SiMysql, SiPython } from 'react-icons/si'
+import Projects from './components/projects';
 
 export default function Home() {
   
   return (
     <main className={styles.main}>
-        
       <div className={styles.grid}>
 
         <h1 className={styles.title}>
@@ -29,29 +26,15 @@ export default function Home() {
               <Image src="/IMGs/mail.svg" alt="mail-logo" width={60} height={60}/>
               <p className={styles.socialDescription}>Mi correo, por si gustas contactarme por ahí</p>
             </a>
-            {/* <a href="https://open.spotify.com/user/lameavollaiiita?si=ce05a56774b043c1">
-              <Image src="/IMGs/spotify.svg" alt="spotify-logo" width={60} height={60}/>
-              <p className={styles.socialDescription}>Mis gustos musicales 🎶💃🏻</p>
-            </a> */}
         </div>
 
         <p className={styles.description}>
           {content.descripcion}
         </p>
       </div>
-        <section className={styles.sobremi}>
-          <h2>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati iste vero, vitae reprehenderit modi cum. Earum mollitia libero officiis ut ullam laborum exercitationem! Incidunt, modi assumenda. Aspernatur nemo unde sequi!
-          </h2>
-          <div className={styles.icon}>
-            <FaReact />
-            <SiTypescript />
-            <SiNextdotjs />
-            <SiPlanetscale />
-            <SiMysql />
-            <SiPython />
-          </div>
-        </section>
+      <section id="projects" className={styles.projects}>
+        <Projects />
+      </section>
     </main>
   )
 }

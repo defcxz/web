@@ -1,0 +1,38 @@
+.container {
+   margin-top: 10rem;
+}
+
+.container h1{
+   font-size: 2.5rem;
+}
+
+.proyectos {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+}
+
+.card {
+   margin: 1rem;
+   padding: 1.5rem;
+   text-align: left;
+   text-decoration: none;
+   border: 1px solid #d8c4b6;
+   border-radius: 10px;
+   width: 100%;
+}
+
+.card:hover {
+   border: 1px solid #313131;
+}
+
+.card h2 {
+   margin: 10rem 0 0 0;
+   font-size: 1.5rem;
+}
+
+.card p {
+   margin: 0;
+   font-size: 1.25rem;
+}
+
