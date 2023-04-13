@@ -4,15 +4,15 @@
        "id": 1,
        "name": "VANR",
        "year": "2021",
-       "description": "Descripción del proyecto 1",
-       "image": "http://www.lorempixel.com/400/200/",
-       "url": "http://vanr-cl.tumblr.com"
+       "description": "Un lugar para compartir enseñanzas e historias.",
+       "image": "https://64.media.tumblr.com/bc9b22e288da895983350ef9f1112d76/1b075437fce1e4e4-18/s2048x3072_c18519,15093,82639,87222/455e5ae546520cfd2f62d1834742de46e3760684.jpg",
+       "url": "https://vanr-cl.tumblr.com"
      },
      {
        "id": 2,
-       "name": "Proyecto 2",
-       "year": "2021",
-       "description": "Descripción del proyecto 2",
+       "name": "Optifind",
+       "year": "2022",
+       "description": "Una aplicación que permite gestionar la comunicación académica entre estudiantes con consejeros u otros miembros de la comunidad.",
        "url": "http://www.google.com"
      },
      {
