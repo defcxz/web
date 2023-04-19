@@ -18,15 +18,12 @@ export default function Home() {
           <p className={styles.subtitle}>Puedes encontrarme aquí!</p>
             <a href="https://www.instagram.com/defcxz">
               <Image src="/IMGs/instagram.svg" alt="instagram-logo" width={60} height={60}/>
-              <p className={styles.socialDescription}>De vez en cuando publico aquí</p>
             </a>
             <a href="https://www.github.com/defcxz">
               <Image src="/IMGs/github.svg" alt="github-logo" width={60} height={60}/>
-              <p className={styles.socialDescription}>Aquí tengo algunos proyectos de programación!</p>
             </a>
             <a href="mailto:ma.gomez@duocuc.cl">
               <Image src="/IMGs/mail.svg" alt="mail-logo" width={60} height={60}/>
-              <p className={styles.socialDescription}>Mi correo, por si gustas contactarme por ahí</p>
             </a>
         </div>
 
