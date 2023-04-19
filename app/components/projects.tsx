@@ -8,14 +8,16 @@ export default function Projects() {
       <h1>Mis proyectos</h1>
       <div className={styles.proyectos}>
          {content.projects.map((project) => (
-            <div className={styles.card} key={project.id}>
-               <p>{project.description}</p>
-               <div className={styles.nameCard}>
-                  <h2>{project.name}</h2>
-                  {/* <p className={styles.year}>{project.year}</p> */}
-                  <a href={project.url} target="_blank">
-                     <BsArrowUpRightCircle />
-                  </a>
+            <div className={styles.card} key={project.id} style={{ backgroundImage: `url(${project.image})` }}>
+               <div className={styles.overlay}>
+                  <p>{project.description}</p>
+                  <div className={styles.nameCard}>
+                     <h2>{project.name}</h2>
+                     <a href={project.url} target="_blank">
+                     {/* <p className={styles.year}>{project.year}</p> */}
+                        <BsArrowUpRightCircle />
+                     </a>
+                  </div>
                </div>
             </div>
          ))}

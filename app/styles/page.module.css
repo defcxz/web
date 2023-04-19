@@ -1,3 +1,24 @@
+.fade {
+  opacity: 0;
+  animation-name: fade-in;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fade-in {
+  from {
+     margin-top: 40rem;
+     opacity: 0;
+  }
+
+  to {
+     margin-top: 20rem;
+     opacity: 1;
+  }
+}
+
+
+
 .main {
   min-height: 90vh;
   margin-right: 10rem;

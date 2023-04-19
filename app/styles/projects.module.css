@@ -13,6 +13,8 @@
 }
 
 .card {
+   background-size: cover;
+   background-position-x: center;
    display: flex;
    flex-direction: column;
    justify-content: flex-end;
@@ -23,10 +25,21 @@
    border: 1px solid #d8c4b6;
    border-radius: 10px;
    width: 100%;
+   z-index: 1;
+   transition: .3s ease-in-out;
 }
 
 .card:hover {
+   cursor: pointer;
    border: 1px solid #313131;
+   box-shadow: 0 0 10px #313131;
+   transition: .3s ease-in-out;
+   z-index: 5;
+}
+
+.card:active {
+   width: 120%;
+   transition: .2s ease-in-out;
 }
 
 .nameCard {
@@ -50,10 +63,3 @@
    font-size: 1rem;
 }
 
-.year {
-   color: #dbdbdb;
-   font-size: 12px;
-   background-color: #8f8f8f;
-   border-radius: .8rem;
-   padding: .2rem .5rem;
-}

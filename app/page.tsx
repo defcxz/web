@@ -2,12 +2,14 @@ import styles from './styles/page.module.css';
 import Image from 'next/image';
 import content from './content.json';
 import Projects from './components/projects';
+import Contact from './components/contact';
+
 
 export default function Home() {
   
   return (
     <main className={styles.main}>
-      <div className={styles.grid}>
+      <div className={`${styles.grid} ${styles.fade}`}>
 
         <h1 className={styles.title}>
           {content.nombre}
@@ -34,6 +36,9 @@ export default function Home() {
       </div>
       <section id="projects" className={styles.projects}>
         <Projects />
+      </section>
+      <section id="contact" className={styles.contact}>
+        <Contact />
       </section>
     </main>
   )
