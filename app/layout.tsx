@@ -1,7 +1,7 @@
 import './globals.css';
 import * as React from 'react';
 import { AnalyticsWrapper } from './components/analytics';
-import Navbar from './navbar'
+import Navigationbar from './navbar'
 import Footer from './footer'
 
 
@@ -18,7 +18,7 @@ export default function RootLayout({
       */}
       <head />
       <body>
-        <Navbar />
+        <Navigationbar />
         {children}
         <AnalyticsWrapper />
         <Footer />
