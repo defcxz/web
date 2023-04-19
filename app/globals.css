@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;600&family=PT+Serif:wght@400;700&display=swap');
 html,
 body {
-  color: #000;
-  background: rgb(255,240,226);
+  color: #ebdfcb;
+  background: #050505;
   padding: 0;
   margin: 0;
   font-family: 'Noto Sans', sans-serif;
@@ -31,3 +31,7 @@ a {
     background: black;
   }
 } */
+
+img {
+  filter: invert(93%) sepia(21%) saturate(290%) hue-rotate(329deg) brightness(97%) contrast(89%);
+}
