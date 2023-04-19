@@ -15,9 +15,8 @@
   }
 
 .nav {
-    backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px) brightness(0.8);
     position: fixed;
-    margin-top: .1rem;
     left: 0;
     right: 0;
     width: 85vw;
@@ -38,7 +37,7 @@
 .separador{
     width: 20%;
     height: 1px;
-    background-color: #000;
+    background-color: #ebdfcb;
     margin-top: 10px;
     margin-bottom: 10px;
 }

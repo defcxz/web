@@ -12,7 +12,7 @@
   }
 
   to {
-     margin-top: 20rem;
+     margin-top: 15rem;
      opacity: 1;
   }
 }
@@ -50,7 +50,9 @@
 
 .icon img {
   /* filter: invert(1); */
+  margin-top: 2rem;
   width: 29px;
+  height: auto;
 }
 
 .title {
@@ -117,24 +119,40 @@
   margin-left: 0.5rem;
 }
 
-.socialDescription {
-  display: none;
-}
-
 .medark{
   width: 50%;
 }
 
 @media (max-width: 768px) {
-  .title {
-    margin-top: 25px;
+  
+  .main {
+    margin-left: 0;
+    margin-right: 0;
   }
-  .medark{
-    position: fixed;
-    margin-top: -50%;
-    width: 90vw;
+  
+  .title {
+    font-size: 5rem;
+    margin-top: 15px;
+    grid-column: 1/4;
   }
 
+  .title,
+  .description {
+    text-align: center;
+  }
+
+  .icon{
+    height: initial;
+    margin-top: 0;
+    justify-content: center;
+    grid-column: 1 / 4;
+  }
+
+  .description {
+    width: initial;
+    margin-left: initial;
+    grid-column: 1 / 4;
+  }
   /* .icon {
     margin-top: 4rem;
     flex-direction: column;
