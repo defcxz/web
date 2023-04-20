@@ -123,8 +123,22 @@
   width: 50%;
 }
 
+
+
 @media (max-width: 768px) {
+  @keyframes fade-in {
+    from {
+       margin-top: 40rem;
+       opacity: 0;
+    }
   
+    to {
+       margin-top: 10rem;
+       opacity: 1;
+    }
+  }
+
+
   .main {
     margin-left: 0;
     margin-right: 0;
@@ -148,11 +162,17 @@
     grid-column: 1 / 4;
   }
 
+  .icon img {
+    margin-top: 0;
+  }
+
   .description {
     width: initial;
     margin-left: initial;
     grid-column: 1 / 4;
   }
+
+
   /* .icon {
     margin-top: 4rem;
     flex-direction: column;
