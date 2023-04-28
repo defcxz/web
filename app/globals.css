@@ -19,8 +19,8 @@ a {
 
 
 *::selection{
-  background: #000000;
-  color: #FFF0E2;
+  color: #050505;
+  background: #ebdfcb;
 }
 /* @media (prefers-color-scheme: dark) {
   html {
