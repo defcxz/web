@@ -1,6 +1,6 @@
 import './globals.css';
 import * as React from 'react';
-import Navigationbar from './navbar'
+import Navigationbar from './components/Navbar/navbar'
 import Footer from './footer'
 import Content from './content.json'
 

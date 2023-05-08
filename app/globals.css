@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;600&family=PT+Serif:wght@400;700&display=swap');
 html,
 body {
+  overflow: hidden;
   color: #ebdfcb;
   background: #050505;
   padding: 0;

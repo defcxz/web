@@ -5,10 +5,10 @@ import { BsArrowUpRightCircle } from 'react-icons/bs'
 export default function Projects() {
   return (
    <div className={styles.container}>
-      <h1>Proyectos</h1>
+      <h1 className={styles.title}>Proyectos</h1>
       <div className={styles.proyectos}>
-         {content.projects.map((project) => (
-            <div className={styles.card} key={project.id}>
+         {content.projects.map((project, index) => (
+            <div className={`${styles.card} delay-${index + 1}`} key={project.id} style={{ animationDelay: `${(index + 1) * .7}s` }}>
               <a href={project.url} target="_blank">
                 <div className={styles.nameCard}>
                   <p>{project.name}</p>
