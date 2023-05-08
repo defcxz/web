@@ -2,7 +2,6 @@ import styles from './styles/page.module.css';
 import Image from 'next/image';
 import content from './content.json';
 import Projects from '../pages/projects/projects';
-import Fade from 'react-reveal/Fade';
 
 export default function Home() {
   
