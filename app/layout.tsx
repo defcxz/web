@@ -1,8 +1,7 @@
 import './globals.css';
 import * as React from 'react';
-import Navigationbar from './components/Navbar/navbar'
-import Footer from './footer'
-import Content from './content.json'
+import Navigationbar from './components/navbar';
+import Footer from './components/footer';
 
 export default function RootLayout({
   children,
@@ -10,17 +9,19 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="es">
+    <html>
+      <title>Inicio</title>
       {/*
         <head /> will contain the components returned by the nearest parent
         head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
-      <title>{Content.nombre}</title>
       <head />
       <body>
+        <main>
           <Navigationbar />
-          {children}
+            {children}
           <Footer />
+        </main>
       </body>
     </html>
   )

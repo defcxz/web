@@ -1,16 +1,12 @@
 import Link from 'next/link';
-import styles from './navbar.module.css';
+import styles from '../styles/navbar.module.css';
 
 export default function Navigationbar(){
 
     const links = [
         {
-            title: 'Sobre mí',
-            url: '#about',
-        },
-        {
-            title: 'Photography',
-            url: '#photography',
+            title: 'Posts',
+            url: '/posts',
         },
         {
             title: 'Resumé',
@@ -23,7 +19,7 @@ export default function Navigationbar(){
         <main className={styles.main}>
             <nav className={`${styles.nav} ${styles.fade}`}>
                 <ul>
-                    <Link className={styles.name} href="#">Mario G.</Link>
+                    <Link className={styles.name} href="/">Mario G.</Link>
                     {
                         links.map((link, index) => (
                             <Link className={`nav_item ${link.url}`} key={index} href={link.url}>
