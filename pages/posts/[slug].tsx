@@ -25,10 +25,10 @@ export const getStaticProps: GetStaticProps = async () => {
 };
  
 
-export async function getStaticPaths() {
-   const allPosts = await getBlogEntries();
-   return {
-     paths: allPosts?.map(({ slug }) => `/posts/${slug}`) ?? [],
-     fallback: true,
-   }
-}
+// export async function getStaticPaths() {
+//    const allPosts = await getAllPostsWithSlug()
+//    return {
+//      paths: allPosts?.map(({ slug }) => `/posts/${slug}`) ?? [],
+//      fallback: true,
+//    }
+//  }

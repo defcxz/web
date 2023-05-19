@@ -18,8 +18,8 @@ export default function Posts( { posts }) {
          <h1 className={styles.title}>Posts</h1>
          <p className={styles.subtitle}>Porque sí, también me gusta escribir.</p>
          {posts.map((post) => (
-            <Link href={`/posts/${post.id}`}>
-               <li className={styles.list} key={post.id}>
+            <Link href={`/posts/${post.id}`} key={post.id}>
+               <li className={styles.list}>
                   <h2>{post.title}</h2>
                   <p className={styles.date}>{post.date}</p>
                </li> 

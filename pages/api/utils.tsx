@@ -18,6 +18,8 @@ export async function getBlogEntries() {
     title: post.fields.title,
     author: post.fields.author,
     content: JSON.stringify(post.fields.content),
-    date: formatDistanceToNow(new Date(post.fields.date), { addSuffix: true }),
+    date: typeof post.fields.date === 'string' || typeof post.fields.date === 'number'
+      ? formatDistanceToNow(new Date(post.fields.date), { addSuffix: true })
+      : '',
   }));
 }
