@@ -1,7 +1,7 @@
 import { GetStaticProps } from "next";
 import { getBlogEntries } from "./api/utils";
 
-import styles from '../app/styles/posts.module.css'
+import styles from '../pages/posts/posts.module.css'
 import Link from "next/link";
 
 

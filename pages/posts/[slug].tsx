@@ -1,8 +1,12 @@
+import { BiLeftArrowAlt } from "react-icons/bi";
 import { useRouter } from "next/router";
 import ErrorPage from "next/error";
-
+import styles from './posts.module.css'
 import { GetStaticProps, GetStaticPaths } from "next";
 import { getBlogEntries } from "../api/utils";
+import Link from "next/link";
+import PostBody from "../../app/components/Posts/post-body";
+
 
 export default function Post({ post }){
 
@@ -13,7 +17,16 @@ export default function Post({ post }){
    }
 
    return (
-      <h1>{post.title}</h1>
+      <main className={styles.main}>
+
+         <Link href="/posts/">
+            <BiLeftArrowAlt className={styles.back} height={100} width={100}/>
+         </Link>
+         <h1 className={styles.title}>{post.title}</h1>
+         <p className={styles.subtitle}>{post.date}</p>
+         {post.content}
+         <PostBody content={post.content} />
+      </main>
    );
 }
 

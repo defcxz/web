@@ -1,6 +1,6 @@
 import './globals.css';
 import * as React from 'react';
-import Navigationbar from './components/navbar';
+import Navigationbar from './components/Navbar/navbar';
 import Footer from './components/footer';
 
 export default function RootLayout({

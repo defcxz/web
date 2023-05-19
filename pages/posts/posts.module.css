@@ -1,5 +1,5 @@
 .main {
-   margin-top: 3rem;
+   margin-top: 5rem;
    margin-right: 10rem;
    margin-left: 10rem;
    flex: 1;
@@ -9,8 +9,12 @@
    font-family: 'PT Serif', serif;
 }
 
+.back{
+   width: 2em;
+   height: 2em;
+}
+
 .title {
-   margin-top: 4rem;
    margin-bottom: 0;
 }
 

@@ -1,5 +1,5 @@
 import '../app/globals.css';
-import Navigationbar from '../app/components/navbar';
+import Navigationbar from '../app/components/Navbar/navbar';
 import Footer from '../app/components/footer';
 import Head from 'next/head';
 import { useRouter } from 'next/router';

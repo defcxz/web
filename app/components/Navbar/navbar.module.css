@@ -14,14 +14,16 @@
     }
   }
 
+
 .nav {
     backdrop-filter: blur(4px) brightness(0.8);
     position: fixed;
+    top: 0;
     left: 0;
     right: 0;
-    width: 85vw;
-    margin-right: auto;
-    margin-left: auto;
+    width: 100vw;
+    padding-right: 4rem;
+    padding-left: 4rem;
     z-index: 100;
     font-size: .9rem;
 }
