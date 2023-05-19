@@ -2,7 +2,7 @@ import { createClient } from 'contentful';
 import { formatDistanceToNow } from 'date-fns';
 
 const space_id = process.env.CONTENTFUL_SPACE_ID;
-const access_token = process.env.CONTENTFUL_ACCESS_TOKEN;
+const access_token = process.env.CONTENTFUL_PREVIEW_ACCESS_TOKEN;
 
 const client = createClient({
   space: space_id ? space_id : '',
