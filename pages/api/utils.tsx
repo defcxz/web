@@ -21,5 +21,6 @@ export async function getBlogEntries() {
     date: typeof post.fields.date === 'string' || typeof post.fields.date === 'number'
       ? formatDistanceToNow(new Date(post.fields.date), { addSuffix: true })
       : '',
+    slug: post.fields.slug,
   }));
 }
