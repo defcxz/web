@@ -15,13 +15,15 @@ const customMarkdownOptions = (content) => ({
 })
 
 export default function PostBody({ content }) {
+  const parsedContent = JSON.parse(content);
+
   return (
     <div className="max-w-2xl mx-auto">
       <div className={markdownStyles['markdown']}>
         {documentToReactComponents(
-          content.json,
-          customMarkdownOptions(content)
-        )}
+          parsedContent,
+          customMarkdownOptions(parsedContent)
+          )}
       </div>
     </div>
   )

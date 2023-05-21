@@ -9,12 +9,21 @@
    font-family: 'PT Serif', serif;
 }
 
+.header {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+
+}
+
 .back{
+   margin-top: .6em;
    width: 2em;
    height: 2em;
 }
 
 .title {
+   margin-top: 0;
    margin-bottom: 0;
 }
 

@@ -24,14 +24,15 @@ export default function MyApp({ Component, pageProps }) {
 }
 
 function getPageTitle(pathname: string): string {
+  const sign = ' -- Mario G.';
   switch (pathname) {
     case '/':
-      return 'Home';
+      return 'Home' + sign;
     case '/posts':
-      return 'Posts';
+      return 'Posts' + sign;
     case '/about':
-      return 'About';
+      return 'About' + sign;
     default:
-      return 'Home';
+      return 'Post' + sign;
   }
 }

@@ -18,13 +18,13 @@ export default function Post({ post }){
 
    return (
       <main className={styles.main}>
-
-         <Link href="/posts/">
-            <BiLeftArrowAlt className={styles.back} height={100} width={100}/>
-         </Link>
-         <h1 className={styles.title}>{post.title}</h1>
+         <div className={styles.header}>
+            <Link href="/posts/">
+               <BiLeftArrowAlt className={styles.back} height={100} width={100}/>
+            </Link>
+            <h1 className={styles.title}>{post.title}</h1>
+         </div>
          <p className={styles.subtitle}>{post.date}</p>
-         {post.content}
          <PostBody content={post.content} />
       </main>
    );
