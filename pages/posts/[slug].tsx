@@ -24,7 +24,7 @@ export default function Post({ post }){
             </Link>
             <h1 className={styles.title}>{post.title}</h1>
          </div>
-         <p className={styles.subtitle}>{post.date}</p>
+         <p className={styles.dateInPost}>{post.date}</p>
          <PostBody content={post.content} />
       </main>
    );

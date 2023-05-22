@@ -37,6 +37,11 @@
    opacity: .7;
 }
 
+.dateInPost {
+   opacity: .7;
+   margin-left: 2rem;
+}
+
 .list {
    display: flex;
    align-items: center;

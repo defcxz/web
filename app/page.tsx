@@ -4,6 +4,24 @@ import content from './content.json';
 import Projects from '../pages/projects/projects';
 
 export default function Home() {
+
+  const socialmedia = [
+    {
+      name: 'instagram',
+      url: 'https://www.instagram.com/defcxz',
+      icon: '/assets/instagram.svg'
+    },
+    {
+      name: 'github',
+      url: 'https://www.github.com/defcxz',
+      icon: '/assets/github.svg'
+    },
+    {
+      name: 'mail',
+      url: 'mailto:ma.gomez@duocuc.cl',
+      icon: '/assets/mail.svg'
+    }
+  ]
   
   return (
       <main className={styles.main}>
@@ -15,20 +33,13 @@ export default function Home() {
             {content.descripcion}
           </h1>
           <div className={styles.icon}>
-            <a href="https://www.instagram.com/defcxz">
-              <Image src="/assets/instagram.svg" alt="instagram-logo" width={60} height={60}/>
-            </a>
-            <a href="https://www.github.com/defcxz">
-              <Image src="/assets/github.svg" alt="github-logo" width={60} height={60}/>
-            </a>
-            <a href="mailto:ma.gomez@duocuc.cl">
-              <Image src="/assets/mail.svg" alt="mail-logo" width={60} height={60}/>
-            </a>
+            {socialmedia.map((item, index) => (
+              <a href={item.url} key={index}>
+                <Image src={item.icon} alt={`${item.name}-logo`} width={60} height={60}/>
+              </a>
+            ))}
           </div>
         </div>
-        {/* <section id="contact" className={styles.contact}>
-          <Contact />
-        </section> */}
       </main>
   )
 }

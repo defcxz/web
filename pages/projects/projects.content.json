@@ -14,7 +14,7 @@
        "year": "2022",
        "description": "Una aplicación que permite gestionar la comunicación académica entre estudiantes con consejeros u otros miembros de la comunidad.",
        "image": "../public/IMGs/projects/optifind.png",
-       "url": "../assets/projects/optifind.png"
+       "url": "#"
      },
      {
        "id": 3,
@@ -22,7 +22,7 @@
        "year": "2022",
        "description": "Una plataforma para emprendedores que quieran digitalizar sus negocios.",
        "image": "https://storage.googleapis.com/def-bucket-01/Registro%20Emprendedores.png",
-       "url": "../assets/projects/Agoras.png"
+       "url": "#"
      }
    ]
  }

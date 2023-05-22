@@ -22,8 +22,8 @@
     left: 0;
     right: 0;
     width: 100vw;
-    padding-right: 4rem;
-    padding-left: 4rem;
+    padding-right: 9rem;
+    padding-left: 9rem;
     z-index: 100;
     font-size: .9rem;
 }

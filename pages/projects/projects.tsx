@@ -12,7 +12,6 @@ export default function Projects() {
               <a href={project.url} target="_blank">
                 <div className={styles.nameCard}>
                   <p>{project.name}</p>
-                  {/* <p className={styles.year}>{project.year}</p> */}
                   <BsArrowUpRightCircle />
                 </div>
               </a>
