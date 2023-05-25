@@ -35,10 +35,11 @@
     list-style: none;
     justify-content: space-between;
     align-items: center;
+    font-size: 1.1rem;
 }
 
 .name {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-weight: 700;
 }
 
