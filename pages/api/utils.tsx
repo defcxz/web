@@ -12,7 +12,7 @@ const client = createClient({
 
 // Retrieve the list of posts from Contentful
 export async function getBlogEntries() {
-   const posts = await client.getEntries({ content_type: 'posts' });
+  const posts = await client.getEntries({ content_type: 'posts' });
    return posts.items.map((post) => ({
     id: post.sys.id,
     title: post.fields.title,
@@ -22,5 +22,16 @@ export async function getBlogEntries() {
       ? formatDistanceToNow(new Date(post.fields.date), { addSuffix: true })
       : '',
     slug: post.fields.slug,
+  }));
+}
+
+// Retrieve the list of projects from Contentful
+export async function getProjectEntries() {
+  const projects = await client.getEntries({ content_type: 'projects' });
+  return projects.items.map((project) => ({
+    id: project.sys.id,
+    title: project.fields.title,
+    content: JSON.stringify(project.fields.content),
+    slug: project.fields.slug,
   }));
 }

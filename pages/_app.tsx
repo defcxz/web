@@ -24,7 +24,7 @@ export default function MyApp({ Component, pageProps }) {
 }
 
 function getPageTitle(pathname: string): string {
-  const sign = ' -- Mario G.';
+  const sign = ' — Mario G.';
   switch (pathname) {
     case '/':
       return 'Home' + sign;
