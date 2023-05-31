@@ -1,15 +1,38 @@
-// pages/_app.js
+import '../app/globals.css';
+import Navigationbar from '../app/components/Navbar/navbar';
+import Footer from '../app/components/footer';
+import Head from 'next/head';
+import { useRouter } from 'next/router';
 
-// 1. import `NextUIProvider` component
-import { NextUIProvider } from '@nextui-org/react'
+export default function MyApp({ Component, pageProps }) {
 
-function MyApp({ Component, pageProps }) {
-  // 2. Use at the root of your app
+  const router = useRouter();
+  const pageTitle = getPageTitle(router.pathname);
+
   return (
-    <NextUIProvider>
-      <Component {...pageProps} />
-    </NextUIProvider>
+    <>
+    <Head>
+      <title>{pageTitle}</title>
+    </Head>
+    <main>
+      <Navigationbar />
+        <Component {...pageProps} />
+      <Footer />
+    </main>
+    </>
   )
 }
 
-export default MyApp
+function getPageTitle(pathname: string): string {
+  const sign = ' — Mario G.';
+  switch (pathname) {
+    case '/':
+      return 'Home' + sign;
+    case '/posts':
+      return 'Posts' + sign;
+    case '/about':
+      return 'About' + sign;
+    default:
+      return 'Post' + sign;
+  }
+}
