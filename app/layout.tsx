@@ -9,7 +9,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html>
+    <html lang="es">
       <title>Inicio</title>
       {/*
         <head /> will contain the components returned by the nearest parent
