@@ -21,7 +21,7 @@ export default function Navigationbar(){
                 <Link className={styles.name} href="/">Mario G.</Link>
                 {
                     links.map((link, index) => (
-                        <Link className={`nav_item ${link.url}`} key={index} href={link.url}>
+                        <Link className={`nav_item ${link.url}`} key={index} href={link.url} as={link.url}>
                             {link.title}
                         </Link>     
                     ))
