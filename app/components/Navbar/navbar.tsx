@@ -20,8 +20,8 @@ export default function Navigationbar(){
             <ul>
                 <Link className={styles.name} href="/" as="/">Mario G.</Link>
                 {
-                    links.map((link) => (
-                        <Link className={`nav_item ${link.url}`} href={link.url} as={link.url}>
+                    links.map((link, index) => (
+                        <Link className={`nav_item ${link.url}`} key={index} href={link.url} as={link.url} prefetch={false}>
                             {link.title}
                         </Link>     
                     ))

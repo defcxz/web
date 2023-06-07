@@ -29,7 +29,7 @@ export default function Home() {
           <section id="projects" className={styles.projects}>
             <Projects />
           </section>
-          <h1 className={`${styles.title} ${styles.fade}`}>
+          <h1 className={`${styles.title}`}>
             {content.descripcion}
           </h1>
           <div className={styles.icon}>
