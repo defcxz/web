@@ -1,20 +1,16 @@
+'use client';
+
+import { usePathname, useRouter } from "next/navigation";
 import { BiLeftArrowAlt } from "react-icons/bi";
-import { useRouter } from "next/router";
-import ErrorPage from "next/error";
-import styles from './posts.module.css'
+import styles from '../posts.module.css'
 import { GetStaticProps, GetStaticPaths } from "next";
-import { getBlogEntries } from "../api/utils";
+import { getBlogEntries } from "../../api/utils";
 import Link from "next/link";
-import PostBody from "../../app/components/Posts/post-body";
+import PostBody from "../../components/Posts/post-body";
 
 
 export default function Post({ post }){
 
-   const router = useRouter();
-
-   if(router.isFallback && !post) {
-      return <ErrorPage statusCode={404} />
-   }
 
    return (
       <main className={styles.main}>
@@ -40,11 +36,11 @@ export const getStaticProps: GetStaticProps = async ({params}) => {
    };
 };
 
-export async function getStaticPaths() {
+export async function generateStaticParams() {
    const allPosts = await getBlogEntries();
    const paths = allPosts.map(({ slug }) => ({ params: { slug }}));
-   return {
+   return [{
      paths,
      fallback: true,
-   }
+   }]
 }

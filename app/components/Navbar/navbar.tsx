@@ -18,10 +18,10 @@ export default function Navigationbar(){
     return (
         <nav className={`${styles.nav}`}>
             <ul>
-                <Link className={styles.name} href="/" as="/">Mario G.</Link>
+                <Link className={styles.name} href="/">Mario G.</Link>
                 {
                     links.map((link, index) => (
-                        <Link className={`nav_item ${link.url}`} key={index} href={link.url} as={link.url}>
+                        <Link className={`nav_item ${link.url}`} key={index} href={link.url}>
                             {link.title}
                         </Link>     
                     ))

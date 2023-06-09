@@ -1,12 +1,17 @@
 import styles from '../../app/styles/projects.module.css'
 import { BsArrowUpRightCircle } from 'react-icons/bs'
-import { GetStaticProps } from 'next'
-import { getProjectEntries } from '../api/utils'
+import { getProjectEntries } from '../../pages/api/utils'
 import content from './projects.content.json'
 
 
+// async function getProjects () {
+//   const projects = await getProjectEntries();
+//   return projects;
+// }
 
-export default function Projects({ }) {
+
+export default async function Projects() {
+  // const project = await getProjects();
   return (
    <div className={styles.container}>
       <h1 className={styles.title}>Proyectos</h1>
@@ -20,15 +25,8 @@ export default function Projects({ }) {
             </div>
           </a>
         </div>
-         ))}
+        ))}
       </div>
    </div>
   )
-}
-
-export const getStaticProps: GetStaticProps = async () => {
-  const projects = await getProjectEntries();
-  return {
-    props: { projects },
-  };
 }
