@@ -2,6 +2,11 @@
 
 html,
 body {
+  -webkit-user-select: none; /* Deshabilita selección por parte del usuario (Safari) */
+  -ms-user-select: none; /* Deshabilita selección por parte del usuario (IE10+) */
+  user-select: none; /* Deshabilita selección por parte del usuario (estándar) */
+
+
   color: #ebdfcb;
   background: #222222;
   padding: 0;
