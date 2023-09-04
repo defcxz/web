@@ -1,7 +1,7 @@
 import './globals.css';
 import * as React from 'react';
 import Navigationbar from './components/Navbar/navbar';
-import Footer from './components/footer';
+import Footer from './components/Footer/footer';
 
 export default function RootLayout({
   children,

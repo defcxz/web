@@ -1,5 +1,51 @@
 {
-    "nombre" : "Mario G.",
-    "descripcion" : "The world, at your hands. ✨",
-    "bio" : "Programmer, Web Developer and Computer Science Engineering Aspirant."
+    "nombre": "Mario G.",
+    "descripcion": "The world, at your hands. ✨",
+    "bio": "Programmer, Web Developer and Computer Science Engineering Aspirant.",
+    "socialmedia": [
+        {
+            "id": 1,
+            "name": "Instagram",
+            "url": "https://www.instagram.com/defcxz",
+            "icon": "/assets/instagram.svg"
+        },
+        {
+            "id": 2,
+            "name": "Github",
+            "url": "https://www.github.com/defcxz",
+            "icon": "/assets/github.svg"
+        },
+        {
+            "id": 3,
+            "name": "Mail",
+            "url": "mailto:ma.gomez@duocuc.cl",
+            "icon": "/assets/mail.svg"
+        }
+    ],
+    "projects": [
+        {
+            "id": 1,
+            "name": "VANR",
+            "year": "2021",
+            "description": "Un lugar para compartir enseñanzas e historias.",
+            "image": "https://64.media.tumblr.com/bc9b22e288da895983350ef9f1112d76/1b075437fce1e4e4-18/s2048x3072_c18519,15093,82639,87222/455e5ae546520cfd2f62d1834742de46e3760684.jpg",
+            "url": "https://vanr-cl.tumblr.com"
+        },
+        {
+            "id": 2,
+            "name": "Optifind",
+            "year": "2022",
+            "description": "Una aplicación que permite gestionar la comunicación académica entre estudiantes con consejeros u otros miembros de la comunidad.",
+            "image": "../public/IMGs/projects/optifind.png",
+            "url": "#"
+        },
+        {
+            "id": 3,
+            "name": "Ágoras",
+            "year": "2022",
+            "description": "Una plataforma para emprendedores que quieran digitalizar sus negocios.",
+            "image": "https://storage.googleapis.com/def-bucket-01/Registro%20Emprendedores.png",
+            "url": "#"
+        }
+    ]
 }
