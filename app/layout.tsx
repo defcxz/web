@@ -5,7 +5,7 @@ import Navigationbar from './components/Navbar/navbar';
 import Footer from './components/Footer/footer';
 
 export const metadata: Metadata = {
-  title: 'Welcome home.',
+  title: 'Welcome home. - Mario G.',
   description: 'Mi portafolio web.',
   keywords: ['Next.js', 'TypeScript', 'React', 'Portfolio', 'Mario G.'],
   authors: [{ name:'Mario G.', url: 'https://mgu.vercel.app' }],
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 
   openGraph: {
     url: 'https://mgu.vercel.app',
-    title: 'Welcome home.',
+    title: 'Welcome home. — Mario G.',
     description: 'Mi portafolio web.',
     images: [
       {
