@@ -7,41 +7,41 @@ export default function Home() {
 
   const socialmedia = [
     {
-      name: 'instagram',
+      name: 'Instagram',
       url: 'https://www.instagram.com/defcxz',
       icon: '/assets/instagram.svg'
     },
     {
-      name: 'github',
+      name: 'Github',
       url: 'https://www.github.com/defcxz',
       icon: '/assets/github.svg'
     },
     {
-      name: 'mail',
+      name: 'Mail',
       url: 'mailto:ma.gomez@duocuc.cl',
       icon: '/assets/mail.svg'
     },
-    
+
   ]
-  
+
   return (
     <main className={styles.main}>
-      {/* <Link href={"/wawi"}>
-        <h2>HOLA WAWIIII TE QUIERO MUCHO MUCHO MUCHO MUCHO MUCHO MUCHO MUCHO MUCHO MMMMMUCHISIMO UWU</h2>  
-      </Link> */}
-
       <div className={styles.grid}>
-        <section id="projects" className={styles.projects}>
-          <Projects />
-        </section>
         <h1 className={`${styles.title}`}>
           {content.descripcion}
         </h1>
-        <div className={styles.icon}>
+        <p className={`${styles.subtitle}`}>
+          Social media
+        </p>
+
+        <div className={styles.socialmedia}>
           {socialmedia.map((item, index) => (
-            <a href={item.url} key={index}>
-              <Image src={item.icon} alt={`${item.name}-logo`} width={60} height={60}/>
-            </a>
+            <div>
+              <a href={item.url} key={index} className={styles.socialmediacontainer}>
+                <Image src={item.icon} alt={`${item.name}-logo`} width={60} height={60} />
+                <p>{item.name}</p>
+              </a>
+            </div>
           ))}
         </div>
       </div>
