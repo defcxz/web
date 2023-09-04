@@ -8,15 +8,15 @@ import Link from "next/link";
 import PostBody from "../../components/Posts/post-body";
 
 
-export async function getPostSlug ({params}) {
-   const slug = params?.slug; // Obtener el slug de la URL
-   const posts = await getBlogEntries();
-   const post = posts.find((post) => post.slug === slug); // Buscar el post por el slug
-   const filteredPosts = posts.filter((post) => post.slug); // Filtrar los posts sin slug
-   return {
-     props: { posts: filteredPosts, post },
-   };
-};
+// export async function getPostSlug ({params}) {
+//    const slug = params?.slug; // Obtener el slug de la URL
+//    const posts = await getBlogEntries();
+//    const post = posts.find((post) => post.slug === slug); // Buscar el post por el slug
+//    const filteredPosts = posts.filter((post) => post.slug); // Filtrar los posts sin slug
+//    return {
+//      props: { posts: filteredPosts, post },
+//    };
+// };
 
 
 export async function generateStaticParams() {
