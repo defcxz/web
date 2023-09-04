@@ -16,7 +16,7 @@ export default function Home() {
         <div className={styles.list}>
           {content.socialmedia.map((item) => (
             <div key={item.id}>
-              <a href={item.url} className={`${styles.container} ${styles.glowing}`}>
+              <a href={item.url} target='_blank' className={`${styles.container} ${styles.glowing}`}>
                 <Image src={item.icon} alt={`${item.name}-logo`} width={60} height={60} />
                 <p className={styles.link}>{item.name}</p>
               </a>
