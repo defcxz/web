@@ -199,14 +199,29 @@
   }
   
   .title {
-    font-size: 2rem;
-    margin-top: 8rem;
+    margin-top: 5rem;
     line-height: normal;
   }
 
   .title,
   .description {
     text-align: center;
+  }
+
+  .subtitle {
+    grid-column: 4/6;
+  }
+
+  .subtitle2 {
+    grid-column: 4/6;
+  }
+
+  .list {
+    grid-column: 4/6;
+  }
+
+  .list2 {
+    grid-column: 4/6;
   }
 
   .list{
