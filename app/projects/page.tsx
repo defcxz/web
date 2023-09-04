@@ -1,4 +1,4 @@
-import styles from '../../app/styles/projects.module.css'
+import styles from './projects.module.css'
 import { BsArrowUpRightCircle } from 'react-icons/bs'
 import Link from 'next/link'
 import content from './projects.content.json'

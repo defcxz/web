@@ -12,7 +12,7 @@ export default function MyApp({ Component, pageProps }) {
   return (
     <>
     <Head>
-      <title>{pageTitle}</title>
+      <title>Welcome home</title>
       <meta content="width=device-width, initial-scale=1" name="viewport" />
       <meta name="description" content="Mi portafolio web." />
 

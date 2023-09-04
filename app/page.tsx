@@ -1,8 +1,6 @@
 import styles from './styles/page.module.css';
 import Image from 'next/image';
 import content from './content.json';
-import { FiArrowUpRight } from 'react-icons/fi';
-
 export default function Home() {
 
   return (
@@ -34,7 +32,7 @@ export default function Home() {
             <div key={item.id}>
               <a href={item.url} className={`${styles.container2} ${styles.glowing}`}>
                 {/* <Image src={item.icon} alt={`${item.name}-logo`} width={60} height={60} /> */}
-                <FiArrowUpRight />
+                <Image src='/assets/arrow.svg' alt={`${item.name}-logo`} width={20} height={20} />
                 <p className={styles.link}>{item.name}</p>
               </a>
             </div>
