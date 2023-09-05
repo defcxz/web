@@ -46,6 +46,14 @@
             "description": "Una plataforma para emprendedores que quieran digitalizar sus negocios.",
             "image": "https://storage.googleapis.com/def-bucket-01/Registro%20Emprendedores.png",
             "url": "#"
+        },
+        {
+            "id": 4,
+            "name": "Subsify",
+            "year": "2023",
+            "description": "Un administrador inteligente de finanzas personales. Enfocado en la organización de suscripciones y gastos.",
+            "image": "https://storage.googleapis.com/def-bucket-01/Registro%20Emprendedores.png",
+            "url": "#"
         }
     ]
 }
