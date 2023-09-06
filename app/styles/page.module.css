@@ -5,6 +5,13 @@
   animation-fill-mode: forwards;
 }
 
+.grouplist {
+  width: 330px;
+  margin-top: 2rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 @keyframes fade-in {
   from {
      margin-top: 40rem;
@@ -24,9 +31,11 @@
   /* justify-content: center; */
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(10, 1fr);
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: flex-start;
 }
 
 .logobg {
@@ -36,13 +45,6 @@
   left: -70rem;
   top: 15rem;
   opacity: 10%;
-}
-
-.container {
-  display: flex;
-  flex-direction: row;
-  gap: 0.5rem;
-  align-items: center;
 }
 
 .list {
@@ -85,7 +87,9 @@
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #ffc684;
+  /* background-color: #ffc684; */
+  background: rgb(200,35,55);
+  background: linear-gradient(90deg, rgba(200,35,55,1) 0%, rgba(224,98,54,1) 35%, rgba(215,171,97,1) 71%, rgba(47,76,121,1) 100%);
   transform-origin: bottom left;
   transform: scaleX(0);
 }
@@ -227,6 +231,7 @@
   .title {
     margin-top: 1rem;
     line-height: normal;
+    grid-column: 3/10;
   }
 
   .title,
