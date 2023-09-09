@@ -41,7 +41,7 @@
             "id": 2,
             "name": "Optifind",
             "year": "2022",
-            "description": "Una aplicación móvil que establece una comunicación académica fácil, intuitiva y novedosa entre estudiantes con consejeros u otros miembros de la comunidad.",
+            "description": "Una aplicación móvil que establece una comunicación académica fácil, intuitiva e innovadora entre estudiantes con consejeros u otros miembros de la comunidad.",
             "image": "../public/IMGs/projects/optifind.png",
             "url": "#",
             "tags": [
@@ -53,7 +53,7 @@
             "id": 3,
             "name": "Ágoras",
             "year": "2022",
-            "description": "Una plataforma para aquellos emprendedores que capacitarse de manera integral y quieran digitalizar sus negocios.",
+            "description": "Una plataforma para aquellos emprendedores que necesiten capacitarse de manera integral y quieran digitalizar sus negocios.",
             "image": "https://storage.googleapis.com/def-bucket-01/Registro%20Emprendedores.png",
             "url": "#",
             "tags": [
