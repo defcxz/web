@@ -12,7 +12,7 @@ export default function Home() {
         {content.descripcion}
       </h1>
       <div className={styles.grouplist}>
-        <p className={`${styles.subtitle}`}>
+        <p className={`${styles.subtitle}` }>
           Social media
         </p>
         <div className={styles.list}>

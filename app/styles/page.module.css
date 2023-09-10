@@ -1,3 +1,16 @@
+.delay-1 {
+  animation-delay: 0.5s;
+}
+
+.delay-2 {
+  animation-delay: 1s;
+}
+
+.delay-3 {
+  animation-delay: 1.5s;
+}
+
+
 .fade {
   opacity: 0;
   animation-name: fade-in;
@@ -132,7 +145,7 @@
 .title {
   font-size: 25px;
   font-weight: bold;
-  width: 350px;
+  max-width: 30rem;
   text-align: center;
   margin-right: auto;
   margin-left: auto;
