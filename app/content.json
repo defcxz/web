@@ -1,5 +1,80 @@
 {
-    "nombre" : "Mario G.",
-    "descripcion" : "Desarrollando soluciones de altos estándares con impacto en la Industria.",
-    "bio" : "Programmer, Web Developer and Computer Science Engineering Aspirant."
+    "nombre": "Mario G.",
+    "descripcion": "Omnia mutantur, nihit interit.",
+    "bio": "Programmer, Web Developer and Computer Science Engineering Aspirant.",
+    "socialmedia": [
+        {
+            "id": 1,
+            "name": "Instagram",
+            "url": "https://www.instagram.com/defcxz",
+            "icon": "/assets/instagram.svg"
+        },
+        {
+            "id": 2,
+            "name": "Github",
+            "url": "https://www.github.com/defcxz",
+            "icon": "/assets/github.svg"
+        },
+        {
+            "id": 3,
+            "name": "Mail",
+            "url": "mailto:ma.gomez@duocuc.cl",
+            "icon": "/assets/mail.svg"
+        }
+    ],
+    "projects": [
+        {
+            "id": 1,
+            "name": "VANR",
+            "year": "2021",
+            "description": "Un lugar para dar a conocer historias, relatos y enseñanzas de vida para compartirlas a personas de todo el mundo.",
+            "image": "https://64.media.tumblr.com/bc9b22e288da895983350ef9f1112d76/1b075437fce1e4e4-18/s2048x3072_c18519,15093,82639,87222/455e5ae546520cfd2f62d1834742de46e3760684.jpg",
+            "url": "https://vanr-cl.tumblr.com",
+            "tags": [
+                "HTML",
+                "CSS",
+                "Javascript",
+                "Typeform"
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Optifind",
+            "year": "2022",
+            "description": "Una aplicación móvil que establece una comunicación académica fácil, intuitiva e innovadora entre estudiantes con consejeros u otros miembros de la comunidad.",
+            "image": "../public/IMGs/projects/optifind.png",
+            "url": "#",
+            "tags": [
+                "UI/UX Design",
+                "Mobile App"
+            ]
+        },
+        {
+            "id": 3,
+            "name": "Ágoras",
+            "year": "2022",
+            "description": "Una plataforma para aquellos emprendedores que necesiten capacitarse de manera integral y quieran digitalizar sus negocios.",
+            "image": "https://storage.googleapis.com/def-bucket-01/Registro%20Emprendedores.png",
+            "url": "#",
+            "tags": [
+                "UI/UX Design",
+                "Web platform"
+            ]
+        },
+        {
+            "id": 4,
+            "name": "Subsify",
+            "year": "2023 (In development)",
+            "description": "En un mundo lleno de suscripciciones y pagos mensuales recurrentes, Subsify promete ser un administrador inteligente de finanzas personales. Enfocado en la organización de estas suscripciones y gastos del hogar.",
+            "image": "https://storage.googleapis.com/def-bucket-01/Registro%20Emprendedores.png",
+            "url": "#",
+            "tags": [
+                "HTML",
+                "CSS",
+                "JS",
+                "Django",
+                "MySQL"
+            ]
+        }
+    ]
 }

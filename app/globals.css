@@ -1,14 +1,17 @@
-/* @tailwind base;
-@tailwind components;
-@tailwind utilities; */
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;600&family=PT+Serif:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
 html,
 body {
+  -webkit-user-select: none; /* Deshabilita selección por parte del usuario (Safari) */
+  -ms-user-select: none; /* Deshabilita selección por parte del usuario (IE10+) */
+  user-select: none; /* Deshabilita selección por parte del usuario (estándar) */
+
+
   color: #ebdfcb;
-  background: #050505;
+  background: #222222;
   padding: 0;
   margin: 0;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
 a {
