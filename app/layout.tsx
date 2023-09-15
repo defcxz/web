@@ -1,14 +1,14 @@
+import { Analytics } from '@vercel/analytics/react';
 import { Metadata } from 'next';
 import './globals.css';
 import * as React from 'react';
-import Navigationbar from './components/Navbar/navbar';
 import Footer from './components/Footer/footer';
 
 export const metadata: Metadata = {
   title: 'Welcome home. - Mario G.',
   description: 'Mi portafolio web.',
   keywords: ['Next.js', 'TypeScript', 'React', 'Portfolio', 'Mario G.'],
-  authors: [{ name:'Mario G.', url: 'https://mgu.vercel.app' }],
+  authors: [{ name: 'Mario G.', url: 'https://mgu.vercel.app' }],
   colorScheme: 'dark',
 
   openGraph: {
@@ -36,10 +36,12 @@ export default function RootLayout({
   return (
     <html lang="es">
       {/* Verificación Google Search Console. */}
-      <meta name="google-site-verification" content="MMUlHhRR8WFb_SKbT0Y15L9EW4TElTjiAnf_778EG0s" />
+      <head>
+        <meta name="google-site-verification" content="MMUlHhRR8WFb_SKbT0Y15L9EW4TElTjiAnf_778EG0s" />
+      </head>
       <body>
-        {/* <Navigationbar /> */}
-          {children}
+        {children}
+        <Analytics />
         <Footer />
       </body>
     </html>
