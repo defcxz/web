@@ -35,11 +35,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="es">
-      {/*
-        <head /> will contain the components returned by the nearest parent
-        head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
-      */}
-      
+      {/* Verificación Google Search Console. */}
+      <meta name="google-site-verification" content="MMUlHhRR8WFb_SKbT0Y15L9EW4TElTjiAnf_778EG0s" />
       <body>
         {/* <Navigationbar /> */}
           {children}
