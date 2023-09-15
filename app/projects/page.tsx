@@ -39,10 +39,11 @@ export default function Projects() {
             </div>
             {openProjectId === item.id && (
               <div
-                className={styles.projectContent}
+              className={styles.projectContent}
               >
                 <div className={styles.itemYear}>
                   <p>{item.year}</p>
+                  {item.inDev && <span className={styles.badge}>In Development</span>}
                 </div>
                 <div className={styles.itemDescription}>
                   <p>{item.description}</p>
