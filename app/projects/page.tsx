@@ -9,6 +9,7 @@ export default function Projects() {
 
   const [openProjectId, setOpenProjectId] = useState(null);
 
+  // Función para realizar el efecto "acordeón" entre los proyectos.
   const toggleProject = (projectId) => {
     if (openProjectId === projectId) {
       setOpenProjectId(null);
@@ -17,13 +18,17 @@ export default function Projects() {
     }
   };
 
+  const sortedProjects = content.projects.slice().sort((a, b) => {
+    return Number(b.year) - Number(a.year);
+  });
+
   return (
     <main>
       <p className={`${styles.subtitle}`}>
         Projects
       </p>
       <div className={styles.list}>
-        {content.projects.map((item) => (
+        {sortedProjects.map((item) => (
           <div key={item.id}>
             <div
               onClick={() => toggleProject(item.id)} // Llama a toggleProject al hacer clic
