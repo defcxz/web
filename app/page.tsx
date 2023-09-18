@@ -24,9 +24,9 @@ export default function Home() {
 
   return (
     <main className={styles.main}>
-      <h1 className={`${styles.title}`}>
-        {content.descripcion}
-      </h1>
+      <p className={`${styles.title}`}>
+        {content.nombre}
+      </p>
 
 
       <div className={styles.grouplist}>
