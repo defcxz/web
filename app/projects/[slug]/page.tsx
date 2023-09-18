@@ -20,7 +20,7 @@ async function getProject(slug) {
   return project
 }
 
-export default async function Project({ slug }) {
+export default async function Project(slug) {
   const project = await getProject(slug);
   console.log(project);
   return (
