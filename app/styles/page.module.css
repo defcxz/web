@@ -132,14 +132,8 @@
   }
 
   .title {
-    margin-top: 1rem;
+    margin: 1rem 1rem;
     line-height: normal;
-    text-align: center;
-  }
-
-  .description,
-  .title {
-    text-align: center;
   }
 
   .list {

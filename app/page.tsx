@@ -4,6 +4,7 @@ import styles from './styles/page.module.css';
 import Image from 'next/image';
 import content from './content.json';
 import { useState } from 'react';
+import logo from '../public/assets/mi-logo.svg'
 
 export default function Home() {
 
@@ -24,15 +25,15 @@ export default function Home() {
 
   return (
     <main className={styles.main}>
-      <p className={`${styles.title}`}>
+      <h1 className={`${styles.title}`}>
         {content.nombre}
-      </p>
+      </h1>     
 
 
       <div className={styles.grouplist}>
-        <p className={`${styles.subtitle}`}>
+        <h2 className={`${styles.subtitle}`}>
           Social media
-        </p>
+        </h2>
         <div className={styles.list}>
           {content.socialmedia.map((item) => (
             <div key={item.id}>
@@ -50,9 +51,9 @@ export default function Home() {
           ))}
         </div>
 
-        <p className={`${styles.subtitle}`}>
+        <h2 className={`${styles.subtitle}`}>
           Projects
-        </p>
+        </h2>
         <div className={styles.list}>
           {sortedProjects.map((item) => (
             <div key={item.id}>
