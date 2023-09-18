@@ -25,6 +25,7 @@
     "projects": [
         {
             "id": 1,
+            "slug": "vanr",
             "name": "VANR",
             "year": "2021",
             "description": "Un lugar para dar a conocer historias, relatos y enseñanzas de vida para compartirlas a personas de todo el mundo.",
@@ -39,6 +40,7 @@
         },
         {
             "id": 2,
+            "slug": "optifind",
             "name": "Optifind",
             "year": "2022",
             "description": "Una aplicación móvil que establece una comunicación académica fácil, intuitiva e innovadora entre estudiantes con consejeros u otros miembros de la comunidad.",
@@ -51,6 +53,7 @@
         },
         {
             "id": 3,
+            "slug": "agoras",
             "name": "Ágoras",
             "year": "2022",
             "description": "Una plataforma para aquellos emprendedores que necesiten capacitarse de manera integral y quieran digitalizar sus negocios.",
@@ -63,6 +66,7 @@
         },
         {
             "id": 4,
+            "slug": "subsify",
             "name": "Subsify",
             "year": "2023",
             "description": "En un mundo lleno de suscripciciones y pagos mensuales recurrentes, Subsify promete ser un administrador inteligente de finanzas personales. Enfocado en la organización de estas suscripciones y gastos del hogar.",

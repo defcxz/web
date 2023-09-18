@@ -4,20 +4,23 @@ import './globals.css';
 import * as React from 'react';
 import Footer from './components/Footer/footer';
 
+let title = 'Welcome home. - Mario G.' // Título de la web
+let desc = 'Mi espacio en el Internet. ✨' // Descripción
+
 export const metadata: Metadata = {
-  title: 'Welcome home. - Mario G.',
-  description: 'Mi portafolio web.',
+  title: title,
+  description: desc,
   keywords: ['Next.js', 'TypeScript', 'React', 'Portfolio', 'Mario G.'],
   authors: [{ name: 'Mario G.', url: 'https://mgu.vercel.app' }],
   colorScheme: 'dark',
 
   openGraph: {
     url: 'https://mgu.vercel.app',
-    title: 'Welcome home. — Mario G.',
-    description: 'Mi portafolio web.',
+    title: title,
+    description: desc,
     images: [
       {
-        url: '/favicon.ico',
+        url: 'https://i.pinimg.com/564x/c3/35/15/c335151d9d1d02cd0d9831c8668249d5.jpg',
         width: 500,
         height: 500,
         alt: 'Mario G.',

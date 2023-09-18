@@ -6,7 +6,6 @@ body {
   -ms-user-select: none; /* Deshabilita selección por parte del usuario (IE10+) */
   user-select: none; /* Deshabilita selección por parte del usuario (estándar) */
 
-
   color: #ebdfcb;
   background: #222222;
   padding: 0;
@@ -37,7 +36,3 @@ a {
     background: black;
   }
 } */
-
-img {
-  filter: invert(93%) sepia(21%) saturate(290%) hue-rotate(329deg) brightness(97%) contrast(89%);
-}

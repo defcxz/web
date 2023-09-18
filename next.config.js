@@ -12,6 +12,12 @@ const nextConfig = {
       },
     ]
   },
+  images: {
+    domains: [
+      '64.media.tumblr.com',
+      'storage.googleapis.com'
+    ]
+  }
 }
 
 module.exports = nextConfig
