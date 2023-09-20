@@ -22,17 +22,7 @@ a {
   box-sizing: border-box;
 }
 
-
 *::selection{
   color: #050505;
   background: #ebdfcb;
 }
-/* @media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
-} */

@@ -1,10 +1,9 @@
 'use client'
 
-import styles from './styles/page.module.css';
+import styles from './styles/page.module.css'
 import Image from 'next/image';
 import content from './content.json';
 import { useState } from 'react';
-import logo from '../public/assets/mi-logo.svg'
 
 export default function Home() {
 
@@ -25,11 +24,6 @@ export default function Home() {
 
   return (
     <main className={styles.main}>
-      <h1 className={`${styles.title}`}>
-        {content.nombre}
-      </h1>     
-
-
       <div className={styles.grouplist}>
         <h2 className={`${styles.subtitle}`}>
           Social media
