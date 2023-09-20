@@ -1,33 +1,30 @@
-import Link from 'next/link';
-import styles from './navbar.module.css';
+import Link from 'next/link'
+import styles from './navbar.module.css'
+import content from '../../content.json'
 
-export default function Navigationbar(){
+export default function Navbar() {
 
-    const links = [
+  const links = [
+    {
+      title: 'Who am I?',
+      url: '/about',
+    },
+  ];
+
+
+  return (
+    <nav className={`${styles.nav}`}>
+      <ul>
+        <Link className={styles.name} href="/">{content.nombre}</Link>
         {
-            title: 'Posts',
-            url: '/posts',
-        },
-        {
-            title: 'Resumé',
-            url: '/docs/Resume.pdf',
-        },
-    ];
+          links.map((link, index) => (
+            <Link className={`nav_item ${link.url} ${styles.url}`} key={index} href={link.url}>
+              {link.title}
+            </Link>
+          ))
+        }
+      </ul>
+    </nav>
+  )
 
-
-    return (
-        <nav className={`${styles.nav}`}>
-            <ul>
-                <Link className={styles.name} href="/">Mario G.</Link>
-                {
-                    links.map((link, index) => (
-                        <Link className={`nav_item ${link.url}`} key={index} href={link.url}>
-                            {link.title}
-                        </Link>     
-                    ))
-                }
-            </ul>
-        </nav>
-    )
-   
 }

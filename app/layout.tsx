@@ -1,8 +1,9 @@
 import { Analytics } from '@vercel/analytics/react';
-import { Metadata } from 'next';
+import Metadata  from 'next';
 import './globals.css';
 import * as React from 'react';
-import Footer from './components/Footer/footer';
+import Navbar from './components/Navbar/navbar'
+import Footer from './components/Footer/footer'
 
 let title = 'Welcome home. - Mario G.' // Título de la web
 let desc = 'Mi espacio en el Internet. ✨' // Descripción
@@ -43,6 +44,7 @@ export default function RootLayout({
         <meta name="google-site-verification" content="MMUlHhRR8WFb_SKbT0Y15L9EW4TElTjiAnf_778EG0s" />
       </head>
       <body>
+        <Navbar />
         {children}
         <Analytics />
         <Footer />
