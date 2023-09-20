@@ -1,5 +1,5 @@
 import { Analytics } from '@vercel/analytics/react';
-import Metadata  from 'next';
+import { Metadata } from 'next';
 import './globals.css';
 import * as React from 'react';
 import Navbar from './components/Navbar/navbar'
