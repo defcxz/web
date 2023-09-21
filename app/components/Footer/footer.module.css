@@ -26,6 +26,6 @@
   height: 35px;
   margin-bottom: 1rem;
   margin-left: -7px;
-  filter: invert(1);
+  filter: invert(96%) sepia(97%) saturate(251%) hue-rotate(311deg) brightness(97%) contrast(90%);
 }
 

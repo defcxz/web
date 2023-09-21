@@ -40,7 +40,7 @@
 .icon {
   width: 16px;
   height: 16px;
-  filter: invert(1);
+  filter: invert(96%) sepia(97%) saturate(251%) hue-rotate(311deg) brightness(97%) contrast(90%);
 }
 
 .glowing::after {
@@ -73,11 +73,6 @@
 .description {
   width: 90%;
   margin-left: auto;
-}
-
-.logo {
-  height: 1em;
-  margin-left: 0.5rem;
 }
 
 @media (max-width: 768px) {
