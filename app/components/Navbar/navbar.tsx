@@ -1,28 +1,20 @@
+import Image from 'next/image'
 import Link from 'next/link'
 import styles from './navbar.module.css'
-import content from '../../content.json'
+import logo from '../../../public/assets/mi-logo.svg'
 
 export default function Navbar() {
 
-  const links = [
-    {
-      title: 'Who am I?',
-      url: '/about',
-    },
-  ];
-
-
   return (
-    <nav className={`${styles.nav}`}>
+    <nav className={styles.nav}>
       <ul>
-        <Link className={styles.name} href="/">{content.nombre}</Link>
-        {
-          links.map((link, index) => (
-            <Link className={`nav_item ${link.url} ${styles.url}`} key={index} href={link.url}>
-              {link.title}
-            </Link>
-          ))
-        }
+        <Image
+          className={styles.logo}
+          src={logo}
+          width={45}
+          height={45}
+          alt="Logo"
+        />
       </ul>
     </nav>
   )

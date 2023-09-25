@@ -3,76 +3,69 @@
   border-radius: 9px;
   margin: 1.5rem;
   padding: 1rem 5rem 1rem 5rem;
-  height: 96vh;
-  display: flex;
-  align-items: center;
-}
-
-.nav ul{
-  list-style-type: none;
-  display: flex;
-  gap: 5rem;
-  position: absolute;
-  padding: 2rem 0rem 0rem 85rem;
-  top: 0;
+  height: 95vh;
 }
 
 .title {
+  margin-top: 10rem;
   font-size: 145px;
+  margin-bottom: 0;
 }
 
 .name {
-  position: absolute;
-  font-size: 20px;
   transform: rotate(-90deg);
-  padding: 213rem 0 0 0;
+  width: -moz-max-content;
+  width: max-content;
+  margin-top: -30vh;
+  margin-left: 102%;
 }
 
 .year {
-  letter-spacing: 1rem;
-  position: absolute;
-  padding: 54rem 0rem 0rem 50rem;
+  margin-left: 42vw;
+  margin-top: 45vh;
+  letter-spacing: .5rem;
 }
 
-.logo {
-  position: absolute;
-  filter: invert(1);
-  margin: 0rem 0rem 51rem -3rem;
+@media (max-width: 1028px) {
+  .title {
+    font-size: 85px;
+    margin-top: 17rem;
+  }
+
+  .name {
+    margin-top: -18vh;
+  }
+
+  .year {
+    margin-left: 36vw;
+    margin-top: 44vh;
+  }
+
 }
 
 @media (max-width: 768px) {
   .main {
+    /* margin: initial; */
+    margin-left: auto;
+    margin-right: auto;
     flex-direction: column;
-    height: 92vh;
-  }
-
-  .nav ul{
-    position: relative;
-    padding: 0rem 0rem 0rem 5rem;
-    margin-top: -9rem;
-    gap: 1rem;
+    height: 85vh;
+    width: 90vw;
   }
 
   .title {
-    font-size: 40px;
-  }
-
-  .logo {
-    position: relative;
-    margin: 0rem 0rem 7rem -16rem;
+    font-size: 43px;
+    margin-top: 10rem;
+    margin-left: -4.2rem;
   }
 
   .name {
-    position: relative;
     transform: initial;
-    padding: 10rem 0 0 0;
-    font-size: initial;
-    margin: 0;
+    margin-top: 25vh;
   }
 
   .year {
     display: none;
-    position: relative;
-    padding: initial;
   }
+
 }

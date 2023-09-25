@@ -7,20 +7,6 @@ export default function Home() {
 
   return (
     <main className={styles.main}>
-      <Image
-        className={styles.logo}
-        src={logo}
-        width={45}
-        height={45}
-        alt="Logo"
-      />
-      <nav className={styles.nav}>
-        <ul>
-          <li><a href="#">{'>>'}</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Photography</a></li>
-        </ul>
-      </nav>
 
       <h1 className={styles.title}>
         Development.
@@ -31,12 +17,16 @@ export default function Home() {
         </br>
         Creativity.
       </h1>
-      <p className={styles.name}>
-        {content.nombre}
-      </p>
-      <p className={styles.year}>
-        MMXXIII
-      </p>
+      <div className={styles.name}>
+        <p>
+          {content.nombre}
+        </p>
+      </div>
+      <div className={styles.year}>
+        <p>
+          MMXXIII
+        </p>
+      </div>
     </main>
   )
 }

@@ -42,9 +42,10 @@ export default function RootLayout({
       {/* Verificación Google Search Console. */}
       <head>
         <meta name="google-site-verification" content="MMUlHhRR8WFb_SKbT0Y15L9EW4TElTjiAnf_778EG0s" />
+        <meta name="theme-color" content="#000"></meta>
       </head>
       <body>
-        {/* <Navbar /> */}
+        <Navbar />
         {children}
         <Analytics />
         {/* <Footer /> */}
