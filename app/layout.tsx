@@ -44,10 +44,10 @@ export default function RootLayout({
         <meta name="google-site-verification" content="MMUlHhRR8WFb_SKbT0Y15L9EW4TElTjiAnf_778EG0s" />
       </head>
       <body>
-        <Navbar />
+        {/* <Navbar /> */}
         {children}
         <Analytics />
-        <Footer />
+        {/* <Footer /> */}
       </body>
     </html>
   )

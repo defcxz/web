@@ -2,9 +2,10 @@ import styles from './about.module.css'
 
 export default function About() {
   return(
-    <div className={styles.container}>
-
-      <p>Hello, world!</p>
-    </div>
+    <main className={styles.container}>
+      <div className={styles.title}>
+        <h1>Hello, world!</h1>
+      </div>
+    </main>
   )
 }

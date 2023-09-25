@@ -1,7 +1,14 @@
 .container {
   margin: 2rem auto;
-  width: 25rem;
+  /* width: 25rem; */
 }
+
+.title {
+  font-size: 6vw;
+  text-align: center;
+  z-index: 3;
+}
+
 
 @media (max-width: 768px) {
   .container {

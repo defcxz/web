@@ -6,8 +6,8 @@ body {
   -ms-user-select: none; /* Deshabilita selección por parte del usuario (IE10+) */
   user-select: none; /* Deshabilita selección por parte del usuario (estándar) */
 
-  color: #ebdfcb;
-  background: #222222;
+  color: #fff;
+  background: #101010;
   padding: 0;
   margin: 0;
   font-family: 'Inter', sans-serif;
@@ -20,9 +20,4 @@ a {
 
 * {
   box-sizing: border-box;
-}
-
-*::selection{
-  color: #050505;
-  background: #ebdfcb;
 }
