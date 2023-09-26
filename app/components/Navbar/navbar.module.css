@@ -15,8 +15,13 @@
     filter: invert(1);
 }
 
+@media (max-width: 1024px) {
+    .logo {
+        margin-left: 1rem;
+    }
+}
 @media (max-width: 768px) {
     .logo {
-        margin-left: -.5rem;
+        margin-left: initial;
     }
 }

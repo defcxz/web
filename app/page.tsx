@@ -1,12 +1,10 @@
 import styles from './styles/page.module.css'
-import Image from 'next/image';
-import logo from '../public/assets/mi-logo.svg'
 import content from './content.json';
 
 export default function Home() {
 
   return (
-    <main className={styles.main}>
+    <main className={`${styles.main}`} id="main">
 
       <h1 className={styles.title}>
         Development.
@@ -15,7 +13,9 @@ export default function Home() {
         Design.
         <br>
         </br>
-        Creativity.
+        <div className={styles.title_enfasis}>
+          Creativity.
+        </div>
       </h1>
       <div className={styles.name}>
         <p>
