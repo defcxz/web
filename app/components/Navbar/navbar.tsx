@@ -8,13 +8,15 @@ export default function Navbar() {
   return (
     <nav className={styles.nav}>
       <ul>
-        <Image
-          className={styles.logo}
-          src={logo}
-          width={45}
-          height={45}
-          alt="Logo"
-        />
+        <li>
+          <Image
+            className={styles.logo}
+            src={logo}
+            width={45}
+            height={45}
+            alt="Logo"
+          />
+        </li>
       </ul>
     </nav>
   )

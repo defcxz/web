@@ -3,8 +3,12 @@
     position: absolute;
 }
 
-.links {
+.nav li {
     list-style-type: none;
+
+}
+
+.links {
     gap: 5rem;
     /* position: absolute; */
     top: 0;
