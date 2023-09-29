@@ -1,17 +1,20 @@
+.nav {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+}
+
 .nav ul {
     margin-top: 1rem;
-    position: absolute;
+    width: 96vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .nav li {
     list-style-type: none;
-
-}
-
-.links {
-    gap: 5rem;
-    /* position: absolute; */
-    top: 0;
+    gap: 2rem;
 }
 
 .logo {
@@ -19,7 +22,16 @@
     filter: invert(1);
 }
 
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+}
+
 @media (max-width: 1024px) {
+    .nav ul {
+        width: 90vw;
+    }
     .logo {
         margin-left: 1rem;
     }

@@ -3,13 +3,13 @@
   border-radius: 9px;
   margin: 1.5rem;
   padding: 1rem 5rem 1rem 5rem;
-  min-height: 90vh;
+  /* min-height: 80vh; */
 }
 
 .title {
-  /* margin-top: 15%; */
+  margin-top: 10rem;
   font-size: 7vw;
-  margin-bottom: 0;
+  margin-bottom: -4rem;
 }
 
 .title_enfasis {
@@ -32,12 +32,10 @@
 .name {
   transform: rotate(-90deg);
   width: -moz-max-content;
-  /* vertical-align: middle; */
-  margin-top: -25vh;
   text-align: center;
   width: max-content;
-  margin-left: 100%;
-  letter-spacing: .5rem;
+  margin-left: 102%;
+  margin-top: -15rem;
 }
 
 .year {
@@ -45,8 +43,7 @@
   margin-right: auto;
   text-align: center;
   margin-top: 40vh;
-  letter-spacing: .5rem;
-  margin-bottom: -25px;
+  /* margin-bottom: -25px; */
 }
 
 @media (max-width: 1024px) {
