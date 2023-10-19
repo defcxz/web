@@ -3,7 +3,7 @@ import { Lora } from 'next/font/google';
 import { Metadata } from 'next';
 import Head from 'next/head';
 import Navbar from './components/Navbar/navbar'
-import './globals.css';
+import './global.css';
 
 let title = 'Welcome home. - Mario G.' // Título de la web
 let desc = 'Mi espacio en el Internet. ✨' // Descripción
