@@ -1,12 +1,19 @@
 import { Analytics } from '@vercel/analytics/react';
+import { Lora } from 'next/font/google';
 import { Metadata } from 'next';
-import './globals.css';
-import * as React from 'react';
+import Head from 'next/head';
 import Navbar from './components/Navbar/navbar'
-import Footer from './components/Footer/footer'
+import './globals.css';
 
 let title = 'Welcome home. - Mario G.' // Título de la web
 let desc = 'Mi espacio en el Internet. ✨' // Descripción
+
+const font = Lora({
+  weight: '400',
+  display: 'swap',
+  subsets: ['latin'],
+})
+
 
 export const metadata: Metadata = {
   title: title,
@@ -32,24 +39,17 @@ export const metadata: Metadata = {
 
 }
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="es">
-      {/* Verificación Google Search Console. */}
-      <head>
-        <meta name="google-site-verification" content="MMUlHhRR8WFb_SKbT0Y15L9EW4TElTjiAnf_778EG0s" />
-        <meta name="theme-color" content="#000"></meta>
-      </head>
-      <body>
-        <Navbar />
-        {children}
-        <Analytics />
-        {/* <Footer /> */}
-      </body>
+    <html lang="es" className={font.className}>
+    <Head>
+      <meta name="theme-color" content="#000000"></meta>
+    </Head>
+    <body>
+      <Navbar />
+      {children}
+      <Analytics />
+    </body>
     </html>
   )
 }

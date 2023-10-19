@@ -1,13 +1,4 @@
-import Link from 'next/link';
 import content from '../../content.json';
-
-// async function getProject(slug) {
-//   const res = await content;
-//   const projects = await res.projects;
-
-//   const project = projects.find((p) => p.slug === slug);
-//   return project;
-// }
 
 async function getProject(slug) {
   const res = await content.projects

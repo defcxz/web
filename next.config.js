@@ -1,21 +1,14 @@
-/** @type {import('next').NextConfig} */
+const withMDX = require('@next/mdx')()
 
+/** @type {import('next').NextConfig} */
 const nextConfig = {
-  async redirects() {
-    return [
-      {
-        source: '/drop',
-        destination: 'https://www.dropbox.com/scl/fo/mv8b1k3mku5wru8vvdyci/h?dl=0&rlkey=jr2837i649r3bxiuis52vfvyn',
-        permanent: false
-      },
-    ]
-  },
   images: {
     domains: [
       '64.media.tumblr.com',
-      'storage.googleapis.com'
+      'storage.googleapis.com',
+      'media.tenor.com'
     ]
   }
 }
 
-module.exports = nextConfig
+module.exports = withMDX(nextConfig)

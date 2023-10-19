@@ -12,7 +12,7 @@
 }
 
 .title_enfasis {
-  background-image: linear-gradient(100deg, #ffffff, #bc2aeb, #ff4545, #ffffff);
+  background-image: linear-gradient(100deg, #ce7758, #ebc42a, #ff4545, #fadf84);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -21,7 +21,7 @@
 
 @keyframes gradient {
   from {
-    background-position: 0rem;
+    background-position: 0;
   }
   to {
     background-position: 100rem;
@@ -30,7 +30,6 @@
 
 .name {
   transform: rotate(-90deg);
-  width: -moz-max-content;
   text-align: center;
   width: max-content;
   margin-left: 102%;

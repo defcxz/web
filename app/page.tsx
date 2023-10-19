@@ -1,16 +1,8 @@
-'use client'
-
-import { motion, useScroll } from 'framer-motion'
 import styles from './styles/page.module.css'
 import content from './content.json';
-
 export default function Home() {
-
-  const { scrollYProgress } = useScroll();
-
   return (
     <main className={`${styles.main}`} id="main">
-
       <h1 className={styles.title}>
         Development.
         <br>
